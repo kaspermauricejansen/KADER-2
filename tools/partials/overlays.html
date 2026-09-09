@@ -1,0 +1,72 @@
+<!-- MELDING -->
+<div id="toast" role="status" aria-live="polite" class="fixed bottom-24 left-1/2 -translate-x-1/2 translate-y-28 opacity-0 z-[150] transition-all duration-500 pointer-events-none px-4 w-full max-w-md">
+  <div class="flex items-center gap-3 bg-coal text-cream pl-4 pr-6 py-3.5 rounded-full shadow-2xl border border-white/15">
+    <span class="w-7 h-7 rounded-full bg-bronze text-white grid place-items-center shrink-0" aria-hidden="true">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+    </span>
+    <span id="toastText" class="text-xs sm:text-sm font-bold tracking-wide"></span>
+  </div>
+</div>
+
+<!-- WALKTHROUGH-VENSTER -->
+<div id="walkthroughModal" class="fixed inset-0 z-[130] hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="absolute inset-0 bg-coal/90 backdrop-blur-md" data-modal-close></div>
+  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[94%] max-w-4xl">
+    <div class="bg-coal rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+      <div class="flex items-center justify-between p-4 sm:p-5 border-b border-white/10">
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-bronze-light">Cinematische Walkthrough</span>
+          <h2 id="modalTitle" class="text-base sm:text-lg font-extrabold text-cream"></h2>
+        </div>
+        <button type="button" data-modal-close class="w-9 h-9 rounded-full border border-white/20 grid place-items-center text-cream hover:bg-white/10 transition-colors" aria-label="Venster sluiten">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="relative aspect-video bg-black overflow-hidden select-none">
+        <div id="modalScenes" class="absolute inset-0"></div>
+        <div class="absolute inset-0 vignette pointer-events-none"></div>
+        <div class="absolute top-4 left-4 flex items-center gap-2 bg-coal/70 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full text-cream text-[10px] font-extrabold uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-red-500 rec-blink" aria-hidden="true"></span>
+          <span>4K Cinematic · 24 fps</span>
+        </div>
+        <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-coal via-coal/60 to-transparent">
+          <div class="flex items-center gap-3 text-cream">
+            <button type="button" id="modalPlayBtn" class="w-10 h-10 rounded-full bg-cream text-ink grid place-items-center hover:bg-bronze hover:text-white transition-colors shrink-0" aria-label="Afspelen">
+              <svg id="modalPlayIcon" class="w-4 h-4 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            <div class="flex-1 h-1 bg-white/20 rounded-full overflow-hidden">
+              <div id="modalProgress" class="h-full bg-bronze-light rounded-full transition-all duration-100" style="width:0%"></div>
+            </div>
+            <span id="modalTime" class="text-xs font-bold tabular-nums shrink-0">0:00 / 0:24</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LICHTBAK -->
+<div id="lightbox" class="fixed inset-0 z-[140] hidden" role="dialog" aria-modal="true" aria-label="Foto bekijken">
+  <div class="absolute inset-0 bg-black/95" data-lightbox-close></div>
+  <button type="button" data-lightbox-close class="absolute top-5 right-5 z-10 w-11 h-11 rounded-full border border-white/25 text-white grid place-items-center hover:bg-white/10" aria-label="Sluiten">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button type="button" data-lightbox-prev class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/10 border border-white/25 text-white grid place-items-center hover:bg-white/20" aria-label="Vorige foto">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button type="button" data-lightbox-next class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/10 border border-white/25 text-white grid place-items-center hover:bg-white/20" aria-label="Volgende foto">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </button>
+  <div class="absolute inset-0 flex items-center justify-center p-6 sm:p-16 pointer-events-none">
+    <img id="lightboxImg" src="" alt="" class="max-w-full max-h-full rounded-xl shadow-2xl object-contain">
+  </div>
+  <div class="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/80 text-xs font-bold tabular-nums" id="lightboxCounter"></div>
+</div>
+
+<!-- WHATSAPP-KNOP -->
+<a href="https://wa.me/31762408890?text=Hoi%20Studio%20Kader%2C%20ik%20wil%20graag%20meer%20weten%20over%20een%20fotoshoot." target="_blank" rel="noopener" class="wa-float" aria-label="Stuur ons een bericht via WhatsApp">
+  <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.9-.4-1.9-1-2.7-1.9-.7-.7-1.2-1.5-1.5-2.2-.1-.3 0-.4.1-.6.2-.2.5-.5.6-.7.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 1.9 3 4.7 4.1 2.7 1.1 2.7.8 3.2.7.5 0 1.6-.6 1.8-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3z"/>
+    <path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.4C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3.1.9.9-3-.2-.3C4 14.7 3.5 13.4 3.5 12 3.5 7.3 7.3 3.5 12 3.5S20.5 7.3 20.5 12 16.7 20 12 20z"/>
+  </svg>
+</a>

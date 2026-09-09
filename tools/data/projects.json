@@ -1,0 +1,179 @@
+{
+  "_readme": "Bron voor de projectpagina's in /projecten en voor de kaarten op de homepage en het portfolio. Wijzig hier en draai daarna 'npm run build:pages'. categoryKey moet een van: grachtenpand, villa, airbnb, penthouse.",
+  "projects": [
+    {
+      "slug": "keizersgracht-residence",
+      "title": "Keizersgracht Residence",
+      "category": "Grachtenpand",
+      "categoryKey": "grachtenpand",
+      "location": "Breda Centrum",
+      "size": "162 m²",
+      "duration": "72 uur",
+      "result": "Verkocht binnen 9 dagen",
+      "metaDescription": "Interieurfotografie en cinematische walkthrough van een monumentaal grachtenpand van 162 m² in Breda Centrum — verkocht binnen 9 dagen.",
+      "cover": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop",
+      "gallery": [
+        { "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop", "alt": "Woonkamer met stucplafond en hoge ramen" },
+        { "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop", "alt": "Keuken met kookeiland" },
+        { "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop", "alt": "Slaapkamer met daglicht" },
+        { "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop", "alt": "Eethoek bij het raam" },
+        { "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop", "alt": "Badkamer" },
+        { "src": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop", "alt": "Zithoek met zicht op de gracht" }
+      ],
+      "description": "Dit rijksmonument aan de gracht kreeg een volledige visuele make-over. Met tilt-shift lenzen legden we de originele stucplafonds en glas-in-lood ramen kaarsrecht vast, terwijl de cinematische walkthrough bezoekers meeneemt door de statige entree naar de lichte woonkamer.",
+      "quote": "De walkthrough zorgde ervoor dat kopers al verliefd waren vóór de bezichtiging.",
+      "author": "Sanne de Boer — NVM Makelaar",
+      "stats": [
+        { "l": "Bezichtigingen", "v": "+64%" },
+        { "l": "Verkooptijd", "v": "9 dagen" },
+        { "l": "Biedingen boven vraagprijs", "v": "3" },
+        { "l": "Video views Funda", "v": "2.140" }
+      ]
+    },
+    {
+      "slug": "villa-mastbosrand",
+      "title": "Villa Mastbosrand",
+      "category": "Villa / Landhuis",
+      "categoryKey": "villa",
+      "location": "Mastbos, Breda",
+      "size": "310 m²",
+      "duration": "72 uur",
+      "result": "Funda Topper van de Maand",
+      "metaDescription": "Fotografie en video walkthrough van een vrijstaande villa van 310 m² aan de rand van het Mastbos in Breda, opgenomen tijdens het gouden uur.",
+      "cover": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1600&auto=format&fit=crop",
+      "gallery": [
+        { "src": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop", "alt": "Voorgevel van de villa in het gouden uur" },
+        { "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop", "alt": "Woonkamer met open haard" },
+        { "src": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop", "alt": "Keuken met eiland en zicht op de tuin" },
+        { "src": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop", "alt": "Tuinkamer" },
+        { "src": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop", "alt": "Master bedroom" },
+        { "src": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=1200&auto=format&fit=crop", "alt": "Badkamer met vrijstaand bad" }
+      ],
+      "description": "Een vrijstaande villa aan de rand van het Mastbos, gefotografeerd tijdens het gouden uur voor maximale warmte in de gevel. De walkthrough combineert exterieur framing met een rustige binnenroute langs keuken, living en tuinkamer.",
+      "quote": "Binnen twee weken meerdere serieuze biedingen boven vraagprijs.",
+      "author": "Mark Jansen — Eigenaar",
+      "stats": [
+        { "l": "Bezichtigingen", "v": "+48%" },
+        { "l": "Verkooptijd", "v": "14 dagen" },
+        { "l": "Doorkliks Funda", "v": "+38%" },
+        { "l": "Social bereik", "v": "12.500" }
+      ]
+    },
+    {
+      "slug": "the-forest-hideaway",
+      "title": "The Forest Hideaway",
+      "category": "Airbnb / Hospitality",
+      "categoryKey": "airbnb",
+      "location": "Markdal",
+      "size": "94 m²",
+      "duration": "72 uur",
+      "result": "94% Jaarbezetting · +€28 / nacht",
+      "metaDescription": "Fotografie en verticale walkthrough voor een boutique boshut in het Markdal — van 68% naar 94% bezetting en een hogere nachtprijs.",
+      "cover": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1600&auto=format&fit=crop",
+      "gallery": [
+        { "src": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1200&auto=format&fit=crop", "alt": "Boshut tussen de bomen" },
+        { "src": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop", "alt": "Woonkamer met houtkachel" },
+        { "src": "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop", "alt": "Keukenhoek" },
+        { "src": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1200&auto=format&fit=crop", "alt": "Slaapkamer met bosuitzicht" },
+        { "src": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop", "alt": "Zithoek" },
+        { "src": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop", "alt": "Slaapkamer met daglicht" }
+      ],
+      "description": "Een boutique boshut die vertrouwen moest wekken bij internationale gasten. De 9:16 walkthrough versie wordt actief ingezet in Instagram Reels en heeft de directe boekingen fors verhoogd.",
+      "quote": "Onze bezetting ging van 68% naar 94% dankzij de nieuwe beelden.",
+      "author": "Mark Jansen — Superhost",
+      "stats": [
+        { "l": "Bezetting", "v": "94%" },
+        { "l": "Nachtprijs", "v": "+€28" },
+        { "l": "Directe boekingen", "v": "+31%" },
+        { "l": "Reels views", "v": "48.900" }
+      ]
+    },
+    {
+      "slug": "oudegracht-pakhuis",
+      "title": "Oudegracht Pakhuis",
+      "category": "Penthouse / Loft",
+      "categoryKey": "penthouse",
+      "location": "Utrecht",
+      "size": "140 m²",
+      "duration": "72 uur",
+      "result": "Plafondhoogte 4.2m benadrukt",
+      "metaDescription": "Interieurfotografie en walkthrough van een voormalig pakhuis in Utrecht — 140 m² loft met 4,2 meter plafondhoogte en industriële details.",
+      "cover": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1600&auto=format&fit=crop",
+      "gallery": [
+        { "src": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop", "alt": "Loft met originele balken" },
+        { "src": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1200&auto=format&fit=crop", "alt": "Slaapgedeelte op de vide" },
+        { "src": "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop", "alt": "Open keuken" },
+        { "src": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop", "alt": "Keuken met kookeiland" },
+        { "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop", "alt": "Woonkamer met stalen ramen" },
+        { "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop", "alt": "Badkamer" }
+      ],
+      "description": "Een voormalig pakhuis met industriële details en een indrukwekkende plafondhoogte. De walkthrough benadrukt de verticale ruimte met langzame tilt-bewegingen langs de originele balken.",
+      "quote": "Precies de sfeer die we zochten voor onze doelgroep.",
+      "author": "Vastgoedontwikkelaar Utrecht",
+      "stats": [
+        { "l": "Bezichtigingen", "v": "+52%" },
+        { "l": "Verkooptijd", "v": "18 dagen" },
+        { "l": "Video views", "v": "3.400" },
+        { "l": "Leads via site", "v": "27" }
+      ]
+    },
+    {
+      "slug": "wilhelminapier-toren",
+      "title": "Wilhelminapier Toren",
+      "category": "Penthouse / Loft",
+      "categoryKey": "penthouse",
+      "location": "Rotterdam",
+      "size": "185 m²",
+      "duration": "72 uur",
+      "result": "360° Panorama uitzicht",
+      "metaDescription": "Fotografie en cinematische walkthrough van een penthouse van 185 m² op de Wilhelminapier in Rotterdam, met panoramazicht over de Maas.",
+      "cover": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
+      "gallery": [
+        { "src": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop", "alt": "Woonkamer met panoramaramen" },
+        { "src": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop", "alt": "Zithoek bij het raam" },
+        { "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop", "alt": "Open keuken" },
+        { "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop", "alt": "Eetkamer" },
+        { "src": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop", "alt": "Master suite" },
+        { "src": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop", "alt": "Slaapkamer met stadszicht" }
+      ],
+      "description": "Een skyline-penthouse met adembenemend zicht over de Maas. De walkthrough opent met een pan langs de gevelramen voordat de camera rustig door de woonruimtes beweegt.",
+      "quote": "Precies de premium uitstraling die bij het pand past.",
+      "author": "Vastgoedontwikkelaar Rotterdam",
+      "stats": [
+        { "l": "Bezichtigingen", "v": "+71%" },
+        { "l": "Verkooptijd", "v": "11 dagen" },
+        { "l": "Video views", "v": "5.100" },
+        { "l": "Serieuze bieders", "v": "6" }
+      ]
+    },
+    {
+      "slug": "duinvilla-kennemerland",
+      "title": "Duinvilla Kennemerland",
+      "category": "Villa / Landhuis",
+      "categoryKey": "villa",
+      "location": "Teteringen",
+      "size": "265 m²",
+      "duration": "72 uur",
+      "result": "Architectenprijs 2023",
+      "metaDescription": "Architectuurfotografie en walkthrough van een bekroonde moderne villa van 265 m² in Teteringen, opgenomen bij zonsondergang.",
+      "cover": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop",
+      "gallery": [
+        { "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop", "alt": "Keuken met kookeiland" },
+        { "src": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop", "alt": "Woonkamer met glaswand" },
+        { "src": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop", "alt": "Eetkamer" },
+        { "src": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=1200&auto=format&fit=crop", "alt": "Badkamer" },
+        { "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop", "alt": "Slaapkamer" },
+        { "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop", "alt": "Woonkamer bij avondlicht" }
+      ],
+      "description": "Bekroonde moderne architectuur met strakke lijnen en veel glas. We fotografeerden bij zonsondergang om de warme gloed van het interieur te laten contrasteren met de blauwe avondlucht.",
+      "quote": "Een architectuurportfolio waar we trots op zijn.",
+      "author": "Architect, Teteringen",
+      "stats": [
+        { "l": "Portfolio views", "v": "9.800" },
+        { "l": "Awards", "v": "1" },
+        { "l": "Leads architecten", "v": "14" },
+        { "l": "Social bereik", "v": "22.000" }
+      ]
+    }
+  ]
+}

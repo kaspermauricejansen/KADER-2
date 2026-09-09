@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================================
+   Studio Kader — eigen stijlen
+   Dit bestand is de BRON. Wijzig hier, niet in assets/css/site.css.
+   Opnieuw compileren:  npm run build:css
+   ========================================================================= */
+
+:root {
+  --bronze: #A9895B;
+  --bronze-light: #CBB288;
+  --coal: #110F0D;
+  --cream: #FAF8F4;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--cream);
+  color: #161412;
+  /* clip i.p.v. hidden: voorkomt horizontaal scrollen zonder de
+     positie-context van sticky elementen te breken */
+  overflow-x: clip;
+}
+
+::selection { background: var(--bronze); color: #fff; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #F3EFE8; }
+::-webkit-scrollbar-thumb { background: #D1C4B0; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--bronze); }
+
+/* Zichtbare focus voor toetsenbordgebruikers */
+:focus-visible {
+  outline: 3px solid var(--bronze);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* -------------------------------------------------------------------------
+   Alles hieronder staat in @layer components. Dat is belangrijk: zo blijven
+   Tailwind-utilities sterker dan onze eigen classes. Zonder deze laag zou
+   bijvoorbeeld .btn (display:inline-flex) de utility 'hidden' overschrijven,
+   waardoor de offerteknop ook op mobiel zichtbaar bleef.
+   ------------------------------------------------------------------------- */
+@layer components {
+
+/* Sla-navigatie-over link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  background: #161412;
+  color: #FAF8F4;
+  padding: .75rem 1.25rem;
+  border-radius: 0 0 .75rem 0;
+  font-weight: 700;
+  font-size: .85rem;
+}
+.skip-link:focus { left: 0; }
+
+/* ---------- Typografie ---------- */
+.font-serif-italic { font-family: 'Fraunces', serif; font-style: italic; }
+
+.kicker {
+  display: inline-flex; align-items: center; gap: .65rem;
+  font-size: .72rem; font-weight: 800; letter-spacing: .24em;
+  text-transform: uppercase; color: var(--bronze);
+}
+.kicker::before { content: ''; width: 1.8rem; height: 1.5px; background: var(--bronze); }
+.kicker-center { justify-content: center; }
+.kicker-center::after { content: ''; width: 1.8rem; height: 1.5px; background: var(--bronze); }
+
+/* ---------- Knoppen ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+  border-radius: 9999px; font-weight: 700; font-size: .92rem; padding: .85rem 1.8rem;
+  transition: all .35s cubic-bezier(.22, 1, .36, 1);
+  white-space: nowrap; cursor: pointer;
+}
+.btn .arr { transition: transform .3s cubic-bezier(.22, 1, .36, 1); }
+.btn:hover .arr { transform: translateX(4px); }
+.btn-dark { background: #161412; color: #FAF8F4; box-shadow: 0 4px 14px rgba(22, 20, 18, .2); }
+.btn-dark:hover { background: var(--bronze); color: #fff; transform: translateY(-2px); box-shadow: 0 12px 28px -8px rgba(169, 137, 91, .55); }
+.btn-bronze { background: var(--bronze); color: #fff; box-shadow: 0 4px 15px rgba(169, 137, 91, .3); }
+.btn-bronze:hover { background: #85693D; transform: translateY(-2px); box-shadow: 0 12px 28px -6px rgba(169, 137, 91, .6); }
+.btn-ghost { border: 1.5px solid rgba(22, 20, 18, .2); color: #161412; background: transparent; }
+.btn-ghost:hover { border-color: #161412; background: rgba(22, 20, 18, .04); transform: translateY(-2px); }
+.btn-ghost-light { border: 1.5px solid rgba(255, 255, 255, .25); color: #FAF8F4; background: transparent; }
+.btn-ghost-light:hover { border-color: #FAF8F4; background: rgba(255, 255, 255, .08); transform: translateY(-2px); }
+
+.chip {
+  display: inline-flex; align-items: center; gap: .45rem;
+  border-radius: 9999px; padding: .38rem .95rem; font-size: .74rem; font-weight: 700;
+}
+
+/* ---------- Formuliervelden ---------- */
+.field {
+  width: 100%; border-radius: .85rem; border: 1.5px solid rgba(22, 20, 18, .12);
+  background: #fff; padding: .85rem 1.1rem; font-size: .92rem; font-weight: 500;
+  color: #161412; transition: border-color .2s, box-shadow .2s;
+}
+.field:focus { outline: none; border-color: var(--bronze); box-shadow: 0 0 0 4px rgba(169, 137, 91, .16); }
+.field-dark { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .15); color: #FAF8F4; }
+.field-dark::placeholder { color: rgba(250, 248, 244, .45); }
+.field-dark:focus { border-color: var(--bronze-light); background: rgba(255, 255, 255, .09); box-shadow: 0 0 0 4px rgba(203, 178, 136, .2); }
+.field.invalid { border-color: #ff8f8f !important; box-shadow: 0 0 0 4px rgba(224, 82, 82, .18) !important; }
+.field-error { display: none; margin-top: .35rem; font-size: .72rem; font-weight: 700; color: #ff9b9b; }
+.field-error.show { display: block; }
+
+/* ---------- Achtergronden ---------- */
+.hero-glow {
+  background:
+    radial-gradient(850px 500px at 92% 10%, rgba(169, 137, 91, .14), transparent 70%),
+    radial-gradient(650px 500px at 4% 92%, rgba(169, 137, 91, .10), transparent 65%),
+    #FAF8F4;
+}
+.hero-glow-sand {
+  background:
+    radial-gradient(800px 480px at 85% 15%, rgba(169, 137, 91, .12), transparent 70%),
+    radial-gradient(600px 450px at 10% 85%, rgba(169, 137, 91, .08), transparent 65%),
+    #F3EFE8;
+}
+.vignette { box-shadow: inset 0 0 110px rgba(17, 15, 13, .45); }
+
+/* ---------- Animaties ---------- */
+@keyframes pulseDot {
+  0%   { box-shadow: 0 0 0 0 rgba(203, 178, 136, .7); }
+  70%  { box-shadow: 0 0 0 10px rgba(203, 178, 136, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(203, 178, 136, 0); }
+}
+.live-dot { animation: pulseDot 2s infinite; }
+
+@keyframes kbZoomIn  { from { transform: scale(1.02); } to { transform: scale(1.15); } }
+@keyframes kbPanRight { from { transform: scale(1.12) translateX(-3.5%); } to { transform: scale(1.12) translateX(3.5%); } }
+@keyframes kbPanUp    { from { transform: scale(1.12) translateY(3%); } to { transform: scale(1.12) translateY(-3%); } }
+
+/* Scènes van de walkthrough-preview: exact één scène is zichtbaar */
+.kb-scene {
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity .9s cubic-bezier(.4, 0, .2, 1); overflow: hidden;
+}
+.kb-scene.active { opacity: 1; }
+.kb-scene.active[data-fx="zoom"] img { animation: kbZoomIn 6s ease-out forwards; }
+.kb-scene.active[data-fx="pan"]  img { animation: kbPanRight 6s ease-out forwards; }
+.kb-scene.active[data-fx="tilt"] img { animation: kbPanUp 6s ease-out forwards; }
+
+@keyframes recBlink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: .3; } }
+.rec-blink { animation: recBlink 1.2s infinite; }
+
+@keyframes floatBadge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+.float-badge { animation: floatBadge 3.5s ease-in-out infinite; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.fade-in-up { animation: fadeInUp .7s cubic-bezier(.22, 1, .36, 1) forwards; }
+.fade-delay-1 { animation-delay: .1s; opacity: 0; }
+.fade-delay-2 { animation-delay: .2s; opacity: 0; }
+.fade-delay-3 { animation-delay: .3s; opacity: 0; }
+
+/* ---------- Kaarten & navigatie ---------- */
+.work-card:hover .work-img { transform: scale(1.06); }
+
+.nav-btn { position: relative; transition: color .25s; }
+.nav-btn::after {
+  content: ''; position: absolute; left: 0; bottom: -4px; height: 2px; width: 100%;
+  background: var(--bronze); transform: scaleX(0); transform-origin: left;
+  transition: transform .3s cubic-bezier(.22, 1, .36, 1);
+}
+.nav-btn:hover::after { transform: scaleX(1); }
+
+/* De actieve menu-link volgt uit data-page op <body>, zodat het
+   header-partial op elke pagina identiek kan zijn. */
+body[data-page="home"]      .nav-btn[data-nav="home"],
+body[data-page="portfolio"] .nav-btn[data-nav="portfolio"],
+body[data-page="project"]   .nav-btn[data-nav="portfolio"],
+body[data-page="overons"]   .nav-btn[data-nav="overons"],
+body[data-page="werkwijze"] .nav-btn[data-nav="werkwijze"],
+body[data-page="tarieven"]  .nav-btn[data-nav="tarieven"],
+body[data-page="contact"]   .nav-btn[data-nav="contact"] { color: var(--bronze); }
+
+body[data-page="home"]      .nav-btn[data-nav="home"]::after,
+body[data-page="portfolio"] .nav-btn[data-nav="portfolio"]::after,
+body[data-page="project"]   .nav-btn[data-nav="portfolio"]::after,
+body[data-page="overons"]   .nav-btn[data-nav="overons"]::after,
+body[data-page="werkwijze"] .nav-btn[data-nav="werkwijze"]::after,
+body[data-page="tarieven"]  .nav-btn[data-nav="tarieven"]::after,
+body[data-page="contact"]   .nav-btn[data-nav="contact"]::after { transform: scaleX(1); }
+
+/* ---------- FAQ ---------- */
+/* max-height wordt door JS op de echte hoogte gezet, zodat lange
+   antwoorden niet worden afgekapt (dat deed de oude vaste 420px wel) */
+.faq-answer { max-height: 0; overflow: hidden; opacity: 0; transition: max-height .4s cubic-bezier(.22, 1, .36, 1), opacity .3s; }
+.faq-item.open .faq-answer { opacity: 1; }
+.faq-item.open .faq-icon { transform: rotate(45deg); background: var(--bronze); color: #fff; border-color: var(--bronze); }
+
+/* ---------- Foto → video vergelijker ---------- */
+.p2v-container { position: relative; overflow: hidden; user-select: none; touch-action: pan-y; }
+.p2v-photo-side { position: absolute; top: 0; left: 0; height: 100%; overflow: hidden; z-index: 10; }
+.p2v-photo-side img { filter: saturate(.82) brightness(.96) contrast(.97); }
+.p2v-video-side .p2v-img-anim { animation: kbZoomIn 8s ease-in-out infinite alternate; }
+.p2v-letterbox-top, .p2v-letterbox-bottom { position: absolute; left: 0; right: 0; height: 9%; background: #000; z-index: 6; pointer-events: none; }
+.p2v-letterbox-top { top: 0; }
+.p2v-letterbox-bottom { bottom: 0; }
+.p2v-handle {
+  position: absolute; top: 0; bottom: 0; width: 3px; background: #fff; z-index: 20;
+  cursor: ew-resize; transform: translateX(-50%); box-shadow: 0 0 22px rgba(0, 0, 0, .45);
+  border: 0; padding: 0;
+}
+.p2v-circle {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 46px; height: 46px; border-radius: 999px; background: #161412; border: 2px solid #fff;
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, .4); transition: transform .2s;
+}
+.p2v-handle:hover .p2v-circle, .p2v-handle:focus-visible .p2v-circle {
+  transform: translate(-50%, -50%) scale(1.08); background: var(--bronze);
+}
+
+/* ---------- Galerij & tabs ---------- */
+.gallery-thumb { cursor: zoom-in; overflow: hidden; border-radius: 1rem; display: block; width: 100%; padding: 0; border: 0; background: none; }
+.gallery-thumb img { transition: transform .5s cubic-bezier(.22, 1, .36, 1); }
+.gallery-thumb:hover img { transform: scale(1.08); }
+
+.tab-btn {
+  padding: .6rem 1.1rem; border-radius: 9999px; font-size: .72rem; font-weight: 800;
+  letter-spacing: .06em; text-transform: uppercase; background: #F3EFE8; color: #161412;
+  transition: all .25s; cursor: pointer; border: 1px solid transparent;
+}
+.tab-btn.active { background: #161412; color: #FAF8F4; }
+
+/* ---------- WhatsApp knop ---------- */
+.wa-float {
+  position: fixed; right: 1.1rem; bottom: 1.1rem; z-index: 90;
+  width: 56px; height: 56px; border-radius: 999px; background: #25D366;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .28); transition: transform .25s;
+}
+.wa-float:hover { transform: scale(1.08); }
+
+}
+/* ---------- einde @layer components ---------- */
+
+/* ---------- Mobiel ---------- */
+@media (max-width: 640px) {
+  .kicker { font-size: .65rem; gap: .5rem; }
+  .kicker::before, .kicker-center::after { width: 1.2rem; }
+  .wa-float { width: 50px; height: 50px; right: .85rem; bottom: .85rem; }
+  #mainHeader .header-logo-text { font-size: 14px; }
+}
+
+/* ---------- Minder beweging ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+  }
+  .fade-in-up, .fade-delay-1, .fade-delay-2, .fade-delay-3 { opacity: 1; }
+}
+
+/* ---------- Printen ---------- */
+@media print {
+  .wa-float, #mobileDrawer, #announcementBar, #mainHeader, .btn { display: none !important; }
+  body { background: #fff; color: #000; }
+}
