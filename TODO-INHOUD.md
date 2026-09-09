@@ -16,9 +16,12 @@ Gesorteerd op urgentie.
       fotografen. Vervang door iets dat wél klopt, bijvoorbeeld "levert
       conform Funda-specificaties" of een DuPho-lidmaatschap als je dat hebt.
       → `index.html`, in de balk onder de hero
-- [ ] **Stockfoto's als teamportret** — de foto's van Kasper en Giovanni op
-      `over-ons.html` zijn Unsplash-portretten van onbekende personen. Voor
-      een fotografiestudio is dit het meest riskante punt van de hele site.
+- [ ] **Teamportretten toevoegen** — `over-ons.html` verwijst nu naar
+      `assets/img/kasper-jansen.jpg` en `assets/img/giovanni-peterse.jpg`
+      in plaats van naar de oude Unsplash-portretten van onbekende personen.
+      Zolang die twee bestanden er niet staan, toont de pagina daar een
+      gebroken afbeelding. Zie `assets/img/README.md` voor de verwachte
+      namen, verhouding en afmetingen.
 - [ ] **Portfolio bestaat uit stockbeelden** met specifieke resultaten
       eronder ("verkocht binnen 9 dagen", "3 biedingen boven vraagprijs").
       Vervang door echt werk, of label het duidelijk als voorbeeldweergave
