@@ -4,13 +4,13 @@ Hier komen de foto's die van Studio Kader zelf zijn, in plaats van de
 stockbeelden. `over-ons.html` verwacht deze twee bestanden, met exact deze
 namen:
 
-| Bestand                 | Wie              | Status                |
-| ----------------------- | ---------------- | --------------------- |
-| `kasper-jansen.jpg`     | Kasper Jansen    | nog toevoegen         |
-| `giovanni-peterse.jpg`  | Giovanni Peterse | nog toevoegen         |
+| Bestand                 | Wie              | Status                    |
+| ----------------------- | ---------------- | ------------------------- |
+| `kasper-jansen.jpg`     | Kasper Jansen    | staat erin, 1200 × 900 px |
+| `giovanni-peterse.jpg`  | Giovanni Peterse | staat erin, 1200 × 900 px |
 
-Zolang een bestand er niet staat, toont de browser op die plek een gebroken
-afbeelding.
+Wil je er een vervangen? Gebruik dezelfde bestandsnaam en dezelfde
+afmetingen, dan hoeft er niets in de HTML te veranderen.
 
 ## Waar de foto op moet passen
 
