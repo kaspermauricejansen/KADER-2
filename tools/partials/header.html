@@ -1,0 +1,78 @@
+<a class="skip-link" href="#main">Direct naar de inhoud</a>
+
+<!-- BOVENSTE BALK
+     LET OP: de tekst over beschikbaarheid staat vast in de HTML en
+     veroudert dus niet automatisch. Pas hem aan of haal hem weg. -->
+<aside id="announcementBar" aria-label="Aankondiging" class="bg-coal text-cream text-[11px] sm:text-xs py-2.5 px-4 border-b border-white/10 flex items-center justify-center font-semibold">
+  <div class="flex items-center gap-3 flex-wrap justify-center w-full max-w-7xl">
+    <span class="inline-flex items-center gap-1.5 text-bronze-light">
+      <span class="w-2 h-2 rounded-full bg-emerald-400" aria-hidden="true"></span>
+      Gevestigd in Breda
+    </span>
+    <span class="hidden md:inline text-white/40" aria-hidden="true">|</span>
+    <span class="hidden md:inline text-white/85">Boekingen beschikbaar deze &amp; volgende week</span>
+    <span class="hidden lg:inline-flex items-center gap-2 ml-auto text-white/70 text-[11px]">
+      <span class="w-1.5 h-1.5 rounded-full bg-white/50" aria-hidden="true"></span>
+      Binnen 72u opgeleverd
+    </span>
+  </div>
+</aside>
+
+<!-- KOPBALK -->
+<header id="mainHeader" class="sticky top-0 z-50 bg-cream/90 backdrop-blur-xl border-b border-ink/5">
+  <div class="mx-auto max-w-7xl px-4 sm:px-8">
+    <div class="flex items-center justify-between py-3 sm:py-5 gap-2">
+      <a href="{{BASE}}index.html" class="flex items-center gap-2 group min-w-0" aria-label="Studio Kader — naar de homepage">
+        <span class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-ink text-cream grid place-items-center font-extrabold text-sm sm:text-base group-hover:bg-bronze transition-colors duration-300 shadow-sm shrink-0" aria-hidden="true">K</span>
+        <span class="header-logo-text font-extrabold tracking-tight text-[15px] sm:text-[20px] leading-none whitespace-nowrap truncate">
+          Studio Kader<span class="text-bronze">.</span>
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-[13.5px] font-bold" aria-label="Hoofdmenu">
+        <a href="{{BASE}}index.html" class="nav-btn" data-nav="home">Home</a>
+        <a href="{{BASE}}portfolio.html" class="nav-btn" data-nav="portfolio">Portfolio</a>
+        <a href="{{BASE}}over-ons.html" class="nav-btn" data-nav="overons">Over Ons</a>
+        <a href="{{BASE}}werkwijze.html" class="nav-btn" data-nav="werkwijze">Werkwijze</a>
+        <a href="{{BASE}}tarieven.html" class="nav-btn" data-nav="tarieven">Tarieven</a>
+        <a href="{{BASE}}contact.html" class="nav-btn" data-nav="contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a href="{{BASE}}contact.html" class="btn btn-dark !py-2.5 !px-5 text-xs font-bold tracking-wider hidden sm:inline-flex">
+          <span>OFFERTE AANVRAGEN</span>
+          <svg class="arr w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="mobileMenuBtn" type="button" aria-expanded="false" aria-controls="mobileDrawer" class="lg:hidden w-10 h-10 rounded-full border border-ink/15 grid place-items-center hover:bg-ink hover:text-cream transition-colors shrink-0" aria-label="Menu openen">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBIEL MENU -->
+<div id="mobileDrawer" class="fixed inset-0 z-[100] lg:hidden pointer-events-none opacity-0 transition-opacity duration-300">
+  <div id="drawerBackdrop" class="absolute inset-0 bg-coal/60 backdrop-blur-sm"></div>
+  <div id="drawerPanel" role="dialog" aria-modal="true" aria-label="Menu" class="absolute right-0 top-0 h-full w-[85%] max-w-sm bg-cream shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col p-6 pointer-events-auto overflow-y-auto">
+    <div class="flex items-center justify-between pb-6 border-b border-ink/10">
+      <span class="font-extrabold tracking-tight text-lg">Studio Kader<span class="text-bronze">.</span></span>
+      <button id="drawerClose" type="button" class="w-10 h-10 rounded-full border border-ink/15 grid place-items-center hover:bg-ink hover:text-cream transition-colors" aria-label="Menu sluiten">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="flex flex-col py-6 space-y-1 text-base font-bold" aria-label="Mobiel menu">
+      <a href="{{BASE}}index.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Home</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">01</span></a>
+      <a href="{{BASE}}portfolio.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Portfolio &amp; Walkthroughs</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">02</span></a>
+      <a href="{{BASE}}over-ons.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Over Ons</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">03</span></a>
+      <a href="{{BASE}}werkwijze.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Werkwijze &amp; Kwaliteit</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">04</span></a>
+      <a href="{{BASE}}tarieven.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Pakketten &amp; Tarieven</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">05</span></a>
+      <a href="{{BASE}}contact.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Contact &amp; Offerte</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">06</span></a>
+    </nav>
+    <div class="mt-auto pt-6 border-t border-ink/10 flex flex-col gap-3">
+      <a href="https://wa.me/31762408890" target="_blank" rel="noopener" class="btn btn-ghost w-full text-center">WhatsApp Ons</a>
+      <div class="text-center text-xs text-ink/70 font-medium pt-2">
+        <p><a href="mailto:hallo@studiokader.nl" class="hover:text-bronze">hallo@studiokader.nl</a></p>
+        <p class="mt-0.5"><a href="tel:+31762408890" class="hover:text-bronze">+31 76 240 88 90</a> · Breda</p>
+      </div>
+    </div>
+  </div>
+</div>

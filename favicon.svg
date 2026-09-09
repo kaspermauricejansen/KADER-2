@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Studio Kader">
+  <rect width="64" height="64" rx="14" fill="#161412"/>
+  <path d="M20 15h7v15.5L40.5 15H49L34.5 31.8 49.5 49H41L27 32.9V49h-7z" fill="#FAF8F4"/>
+  <circle cx="52" cy="46" r="4" fill="#A9895B"/>
+</svg>

@@ -1,165 +1,670 @@
+<!DOCTYPE html>
 <html lang="nl" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Studio Kader</title>
-<meta name="description" content="High-end interieurfotografie en cinematische walkthroughs. Gevestigd in Breda. Binnen 72 uur geleverd.">
+<title>Interieurfotografie &amp; video walkthroughs in Breda | Studio Kader</title>
+<meta name="description" content="Studio Kader maakt high-end interieurfotografie en cinematische video walkthroughs voor makelaars, hosts en ontwikkelaars. Gevestigd in Breda, binnen 72 uur opgeleverd.">
+<link rel="canonical" href="https://studiokader.nl/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Studio Kader">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Interieurfotografie &amp; video walkthroughs in Breda | Studio Kader">
+<meta property="og:description" content="High-end interieurfotografie en cinematische walkthroughs voor makelaars, hosts en ontwikkelaars. Binnen 72 uur opgeleverd.">
+<meta property="og:url" content="https://studiokader.nl/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<!-- @@include:head -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta name="theme-color" content="#161412">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config={theme:{extend:{colors:{cream:'#FAF8F4',sand:'#F3EFE8',sand2:'#E9E2D5',ink:'#161412',coal:'#110F0D',charcoal:'#1D1A17',bronze:{DEFAULT:'#A9895B',light:'#CBB288',lighter:'#E4D5BC',dark:'#85693D',darker:'#5E4826'}},fontFamily:{sans:['Manrope','system-ui','sans-serif'],serif:['Fraunces','Georgia','serif']}}}}
-</script>
-<style>
-:root{--bronze:#A9895B;--bronze-light:#CBB288;--coal:#110F0D;--cream:#FAF8F4}
-html{scroll-behavior:smooth}
-body{font-family:'Manrope',sans-serif;background-color:var(--cream);color:#161412;overflow-x:hidden}
-::selection{background:var(--bronze);color:#fff}
-::-webkit-scrollbar{width:8px}
-::-webkit-scrollbar-track{background:#F3EFE8}
-::-webkit-scrollbar-thumb{background:#D1C4B0;border-radius:4px}
-::-webkit-scrollbar-thumb:hover{background:var(--bronze)}
-.font-serif-italic{font-family:'Fraunces',serif;font-style:italic}
-.kicker{display:inline-flex;align-items:center;gap:.65rem;font-size:.72rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze)}
-.kicker::before{content:'';width:1.8rem;height:1.5px;background:var(--bronze)}
-.kicker-center{justify-content:center}
-.kicker-center::after{content:'';width:1.8rem;height:1.5px;background:var(--bronze)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;border-radius:9999px;font-weight:700;font-size:.92rem;padding:.85rem 1.8rem;transition:all .35s cubic-bezier(.22,1,.36,1);white-space:nowrap;cursor:pointer}
-.btn .arr{transition:transform .3s cubic-bezier(.22,1,.36,1)}
-.btn:hover .arr{transform:translateX(4px)}
-.btn-dark{background:#161412;color:#FAF8F4;box-shadow:0 4px 14px rgba(22,20,18,.2)}
-.btn-dark:hover{background:var(--bronze);color:#fff;transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(169,137,91,.55)}
-.btn-bronze{background:var(--bronze);color:#fff;box-shadow:0 4px 15px rgba(169,137,91,.3)}
-.btn-bronze:hover{background:#85693D;transform:translateY(-2px);box-shadow:0 12px 28px -6px rgba(169,137,91,.6)}
-.btn-ghost{border:1.5px solid rgba(22,20,18,.2);color:#161412;background:transparent}
-.btn-ghost:hover{border-color:#161412;background:rgba(22,20,18,.04);transform:translateY(-2px)}
-.btn-ghost-light{border:1.5px solid rgba(255,255,255,.25);color:#FAF8F4;background:transparent}
-.btn-ghost-light:hover{border-color:#FAF8F4;background:rgba(255,255,255,.08);transform:translateY(-2px)}
-.chip{display:inline-flex;align-items:center;gap:.45rem;border-radius:9999px;padding:.38rem .95rem;font-size:.74rem;font-weight:700}
-.field{width:100%;border-radius:.85rem;border:1.5px solid rgba(22,20,18,.12);background:#fff;padding:.85rem 1.1rem;font-size:.92rem;font-weight:500;color:#161412;transition:border-color .2s,box-shadow .2s}
-.field:focus{outline:none;border-color:var(--bronze);box-shadow:0 0 0 4px rgba(169,137,91,.16)}
-.field-dark{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:#FAF8F4}
-.field-dark:focus{border-color:var(--bronze-light);background:rgba(255,255,255,.09);box-shadow:0 0 0 4px rgba(203,178,136,.2)}
-.field.invalid{border-color:#e05252 !important;box-shadow:0 0 0 4px rgba(224,82,82,.14) !important}
-.hero-glow{background:radial-gradient(850px 500px at 92% 10%, rgba(169,137,91,.14), transparent 70%),radial-gradient(650px 500px at 4% 92%, rgba(169,137,91,.10), transparent 65%), #FAF8F4}
-.hero-glow-sand{background:radial-gradient(800px 480px at 85% 15%, rgba(169,137,91,.12), transparent 70%),radial-gradient(600px 450px at 10% 85%, rgba(169,137,91,.08), transparent 65%), #F3EFE8}
-.vignette{box-shadow:inset 0 0 110px rgba(17,15,13,.45)}
-.page-view{display:none;opacity:0;transition:opacity .35s ease}
-.page-view.active{display:block;opacity:1}
-@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(203,178,136,.7)}70%{box-shadow:0 0 0 10px rgba(203,178,136,0)}100%{box-shadow:0 0 0 0 rgba(203,178,136,0)}}
-.live-dot{animation:pulseDot 2s infinite}
-@keyframes kbZoomIn{from{transform:scale(1.02)}to{transform:scale(1.15)}}
-@keyframes kbPanRight{from{transform:scale(1.12) translateX(-3.5%)}to{transform:scale(1.12) translateX(3.5%)}}
-@keyframes kbPanUp{from{transform:scale(1.12) translateY(3%)}to{transform:scale(1.12) translateY(-3%)}}
-.kb-scene{position:absolute;inset:0;opacity:0;transition:opacity .9s cubic-bezier(.4,0,.2,1);overflow:hidden}
-.kb-scene.active{opacity:1}
-.kb-scene.active[data-fx="zoom"] img{animation:kbZoomIn 6s ease-out forwards}
-.kb-scene.active[data-fx="pan"] img{animation:kbPanRight 6s ease-out forwards}
-.kb-scene.active[data-fx="tilt"] img{animation:kbPanUp 6s ease-out forwards}
-.work-card:hover .work-img{transform:scale(1.06)}
-.nav-btn{position:relative;transition:color .25s}
-.nav-btn::after{content:'';position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:var(--bronze);transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.22,1,.36,1)}
-.nav-btn:hover::after,.nav-btn.active::after{transform:scaleX(1)}
-.nav-btn.active{color:var(--bronze)}
-.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1),opacity .3s;opacity:0}
-.faq-item.open .faq-answer{max-height:420px;opacity:1}
-.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--bronze);color:#fff;border-color:var(--bronze)}
-@keyframes logoMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.logo-marquee-inner{display:flex;width:max-content;animation:logoMarquee 36s linear infinite}
-.logo-marquee-inner:hover{animation-play-state:paused}
-.brand-logo{display:flex;align-items:center;gap:.6rem;opacity:.85;transition:opacity .3s,transform .3s;flex-shrink:0;padding:0 1.8rem}
-.brand-logo:hover{opacity:1;transform:scale(1.05)}
-.brand-logo img{height:22px;width:auto;filter:brightness(0) invert(1);opacity:.9}
-.brand-wordmark{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:#FAF8F4;letter-spacing:-.01em;white-space:nowrap}
-.brand-wordmark small{display:block;font-family:'Manrope',sans-serif;font-size:.55rem;letter-spacing:.18em;font-weight:800;color:var(--bronze-light);text-transform:uppercase}
-.p2v-container{position:relative;overflow:hidden;user-select:none;touch-action:none}
-.p2v-photo-side{position:absolute;top:0;left:0;height:100%;overflow:hidden;z-index:10}
-.p2v-photo-side img{filter:saturate(.82) brightness(.96) contrast(.97)}
-.p2v-video-side .p2v-img-anim{animation:kbZoomIn 8s ease-in-out infinite alternate}
-.p2v-letterbox-top,.p2v-letterbox-bottom{position:absolute;left:0;right:0;height:9%;background:#000;z-index:6;pointer-events:none}
-.p2v-letterbox-top{top:0}
-.p2v-letterbox-bottom{bottom:0}
-.p2v-handle{position:absolute;top:0;bottom:0;width:3px;background:#fff;z-index:20;cursor:ew-resize;transform:translateX(-50%);box-shadow:0 0 22px rgba(0,0,0,.45)}
-.p2v-circle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:999px;background:#161412;border:2px solid #fff;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(0,0,0,.4);transition:transform .2s}
-.p2v-handle:hover .p2v-circle{transform:translate(-50%,-50%) scale(1.08);background:var(--bronze)}
-@keyframes recBlink{0%,50%{opacity:1}51%,100%{opacity:.3}}
-.rec-blink{animation:recBlink 1.2s infinite}
-@keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-.float-badge{animation:floatBadge 3.5s ease-in-out infinite}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-.fade-in-up{animation:fadeInUp .7s cubic-bezier(.22,1,.36,1) forwards}
-.fade-delay-1{animation-delay:.1s;opacity:0}
-.fade-delay-2{animation-delay:.2s;opacity:0}
-.fade-delay-3{animation-delay:.3s;opacity:0}
-.gallery-thumb{cursor:zoom-in;overflow:hidden;border-radius:1rem}
-.gallery-thumb img{transition:transform .5s cubic-bezier(.22,1,.36,1)}
-.gallery-thumb:hover img{transform:scale(1.08)}
-.tab-btn{padding:.6rem 1.1rem;border-radius:9999px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#F3EFE8;color:#161412;transition:all .25s;cursor:pointer;border:1px solid transparent}
-.tab-btn.active{background:#161412;color:#FAF8F4}
-.wa-float{position:fixed;right:1.1rem;bottom:1.1rem;z-index:90;width:56px;height:56px;border-radius:999px;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(0,0,0,.28);transition:transform .25s}
-.wa-float:hover{transform:scale(1.08)}
-@media (max-width:640px){
-  .kicker{font-size:.65rem;gap:.5rem}
-  .kicker::before,.kicker-center::after{width:1.2rem}
-  .wa-float{width:50px;height:50px;right:.85rem;bottom:.85rem}
-  #mainHeader .header-logo-text{font-size:14px}
+<link rel="stylesheet" href="assets/css/site.css">
+<!-- @@endinclude -->
+<!-- Gegevens voor Google. LET OP: hier staat bewust géén aggregateRating.
+     Sterren in de zoekresultaten mogen alleen op basis van echte,
+     verifieerbare reviews — anders riskeer je een handmatige sanctie. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Studio Kader",
+  "description": "High-end interieurfotografie en cinematische video walkthroughs voor vastgoed.",
+  "url": "https://studiokader.nl/",
+  "email": "hallo@studiokader.nl",
+  "telephone": "+31762408890",
+  "image": "https://studiokader.nl/favicon.svg",
+  "priceRange": "€295 - €795",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Breda",
+    "addressRegion": "Noord-Brabant",
+    "addressCountry": "NL"
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "Breda" },
+    { "@type": "Place", "name": "Zuid-Nederland" },
+    { "@type": "Place", "name": "Randstad" }
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }
 }
-</style>
+</script>
 </head>
-<body class="bg-cream text-ink antialiased selection:bg-bronze selection:text-white">
+<body data-page="home" class="bg-cream text-ink antialiased">
 
-<!-- TOP BLACK BAR -->
+<!-- @@include:header -->
+<a class="skip-link" href="#main">Direct naar de inhoud</a>
+
+<!-- BOVENSTE BALK
+     LET OP: de tekst over beschikbaarheid staat vast in de HTML en
+     veroudert dus niet automatisch. Pas hem aan of haal hem weg. -->
 <aside id="announcementBar" aria-label="Aankondiging" class="bg-coal text-cream text-[11px] sm:text-xs py-2.5 px-4 border-b border-white/10 flex items-center justify-center font-semibold">
   <div class="flex items-center gap-3 flex-wrap justify-center w-full max-w-7xl">
     <span class="inline-flex items-center gap-1.5 text-bronze-light">
-      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+      <span class="w-2 h-2 rounded-full bg-emerald-400" aria-hidden="true"></span>
       Gevestigd in Breda
     </span>
-    <span class="hidden md:inline text-white/30">|</span>
-    <span class="hidden md:inline text-white/80">Boekingen beschikbaar deze &amp; volgende week</span>
-    <span class="hidden lg:inline-flex items-center gap-2 ml-auto text-white/60 text-[11px]">
-      <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
+    <span class="hidden md:inline text-white/40" aria-hidden="true">|</span>
+    <span class="hidden md:inline text-white/85">Boekingen beschikbaar deze &amp; volgende week</span>
+    <span class="hidden lg:inline-flex items-center gap-2 ml-auto text-white/70 text-[11px]">
+      <span class="w-1.5 h-1.5 rounded-full bg-white/50" aria-hidden="true"></span>
       Binnen 72u opgeleverd
     </span>
   </div>
 </aside>
 
-<!-- TOAST -->
-<div id="toast" class="fixed bottom-24 left-1/2 -translate-x-1/2 translate-y-28 opacity-0 z-[150] transition-all duration-500 pointer-events-none px-4 w-full max-w-md">
+<!-- KOPBALK -->
+<header id="mainHeader" class="sticky top-0 z-50 bg-cream/90 backdrop-blur-xl border-b border-ink/5">
+  <div class="mx-auto max-w-7xl px-4 sm:px-8">
+    <div class="flex items-center justify-between py-3 sm:py-5 gap-2">
+      <a href="index.html" class="flex items-center gap-2 group min-w-0" aria-label="Studio Kader — naar de homepage">
+        <span class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-ink text-cream grid place-items-center font-extrabold text-sm sm:text-base group-hover:bg-bronze transition-colors duration-300 shadow-sm shrink-0" aria-hidden="true">K</span>
+        <span class="header-logo-text font-extrabold tracking-tight text-[15px] sm:text-[20px] leading-none whitespace-nowrap truncate">
+          Studio Kader<span class="text-bronze">.</span>
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-[13.5px] font-bold" aria-label="Hoofdmenu">
+        <a href="index.html" class="nav-btn" data-nav="home">Home</a>
+        <a href="portfolio.html" class="nav-btn" data-nav="portfolio">Portfolio</a>
+        <a href="over-ons.html" class="nav-btn" data-nav="overons">Over Ons</a>
+        <a href="werkwijze.html" class="nav-btn" data-nav="werkwijze">Werkwijze</a>
+        <a href="tarieven.html" class="nav-btn" data-nav="tarieven">Tarieven</a>
+        <a href="contact.html" class="nav-btn" data-nav="contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a href="contact.html" class="btn btn-dark !py-2.5 !px-5 text-xs font-bold tracking-wider hidden sm:inline-flex">
+          <span>OFFERTE AANVRAGEN</span>
+          <svg class="arr w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="mobileMenuBtn" type="button" aria-expanded="false" aria-controls="mobileDrawer" class="lg:hidden w-10 h-10 rounded-full border border-ink/15 grid place-items-center hover:bg-ink hover:text-cream transition-colors shrink-0" aria-label="Menu openen">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBIEL MENU -->
+<div id="mobileDrawer" class="fixed inset-0 z-[100] lg:hidden pointer-events-none opacity-0 transition-opacity duration-300">
+  <div id="drawerBackdrop" class="absolute inset-0 bg-coal/60 backdrop-blur-sm"></div>
+  <div id="drawerPanel" role="dialog" aria-modal="true" aria-label="Menu" class="absolute right-0 top-0 h-full w-[85%] max-w-sm bg-cream shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col p-6 pointer-events-auto overflow-y-auto">
+    <div class="flex items-center justify-between pb-6 border-b border-ink/10">
+      <span class="font-extrabold tracking-tight text-lg">Studio Kader<span class="text-bronze">.</span></span>
+      <button id="drawerClose" type="button" class="w-10 h-10 rounded-full border border-ink/15 grid place-items-center hover:bg-ink hover:text-cream transition-colors" aria-label="Menu sluiten">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="flex flex-col py-6 space-y-1 text-base font-bold" aria-label="Mobiel menu">
+      <a href="index.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Home</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">01</span></a>
+      <a href="portfolio.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Portfolio &amp; Walkthroughs</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">02</span></a>
+      <a href="over-ons.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Over Ons</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">03</span></a>
+      <a href="werkwijze.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Werkwijze &amp; Kwaliteit</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">04</span></a>
+      <a href="tarieven.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Pakketten &amp; Tarieven</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">05</span></a>
+      <a href="contact.html" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand"><span>Contact &amp; Offerte</span><span class="text-xs text-bronze font-extrabold" aria-hidden="true">06</span></a>
+    </nav>
+    <div class="mt-auto pt-6 border-t border-ink/10 flex flex-col gap-3">
+      <a href="https://wa.me/31762408890" target="_blank" rel="noopener" class="btn btn-ghost w-full text-center">WhatsApp Ons</a>
+      <div class="text-center text-xs text-ink/70 font-medium pt-2">
+        <p><a href="mailto:hallo@studiokader.nl" class="hover:text-bronze">hallo@studiokader.nl</a></p>
+        <p class="mt-0.5"><a href="tel:+31762408890" class="hover:text-bronze">+31 76 240 88 90</a> · Breda</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- @@endinclude -->
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="relative hero-glow overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+      <div class="lg:col-span-6 z-10">
+        <span class="kicker fade-in-up">Interieurfotografie &amp; Cinematische Walkthroughs</span>
+        <h1 class="mt-5 text-4xl sm:text-5xl lg:text-[3.85rem] font-extrabold tracking-tight leading-[1.05] fade-in-up fade-delay-1">
+          Transformeer je woningpresentatie <span class="font-serif-italic font-normal text-bronze">&amp; verkoop sneller</span>
+        </h1>
+        <p class="mt-6 text-base sm:text-lg text-ink/80 leading-relaxed max-w-xl fade-in-up fade-delay-2">
+          Wij fotograferen elk interieur met architectonische precisie en wekken beelden tot leven in ultra-vloeiende video walkthroughs. Zo beleven potentiële kopers en gasten de ziel van het huis <strong class="text-ink font-semibold">alsof ze er zelf doorheen lopen</strong>.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center fade-in-up fade-delay-3">
+          <a href="contact.html" class="btn btn-dark">
+            <span>Direct offerte aanvragen</span>
+            <svg class="arr w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="portfolio.html" class="btn btn-ghost">
+            <svg class="w-4 h-4 text-bronze" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            <span>Bekijk walkthroughs</span>
+          </a>
+        </div>
+        <!-- TODO: onderbouw of pas deze regel aan. "Funda & NVM gecertificeerd"
+             is niet houdbaar: die organisaties certificeren geen fotografen. -->
+        <div class="mt-10 pt-8 border-t border-ink/10 flex flex-wrap items-center gap-4 sm:gap-6 text-xs sm:text-sm font-bold text-ink/75">
+          <div class="flex items-center gap-2">
+            <span class="text-amber-600" aria-hidden="true">★★★★★</span>
+            <span>4.9/5 (180+ listings)</span>
+          </div>
+          <span class="w-1.5 h-1.5 rounded-full bg-ink/25 hidden sm:block" aria-hidden="true"></span>
+          <span>Funda &amp; NVM gecertificeerd</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-ink/25 hidden sm:block" aria-hidden="true"></span>
+          <span>Binnen 72u opgeleverd</span>
+        </div>
+      </div>
+      <div class="lg:col-span-6 relative">
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-coal aspect-[4/3] sm:aspect-[16/11] border border-ink/10 group">
+          <div id="heroScenes" class="absolute inset-0"
+               data-scene-rotator
+               data-label-target="#heroSceneLabel"
+               data-labels='["Grachtenpand Keizersgracht — Living","Villa Mastbosrand — Keuken","Duinvilla Kennemerland — Master suite"]'>
+            <div class="kb-scene active" data-fx="zoom"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop" alt="Lichte woonkamer met hoge ramen" width="1400" height="963" fetchpriority="high" decoding="async" class="w-full h-full object-cover"></div>
+            <div class="kb-scene" data-fx="pan"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop" alt="Keuken met kookeiland" width="1400" height="963" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+            <div class="kb-scene" data-fx="tilt"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1400&auto=format&fit=crop" alt="Slaapkamer met daglicht" width="1400" height="963" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-coal/85 via-transparent to-black/20 pointer-events-none"></div>
+          <div class="absolute inset-0 vignette pointer-events-none"></div>
+          <div class="absolute top-4 left-4 flex items-center gap-2 bg-coal/70 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full text-cream text-[11px] font-extrabold uppercase tracking-widest pointer-events-none">
+            <span class="w-2 h-2 rounded-full bg-amber-400 live-dot" aria-hidden="true"></span>
+            <span>Interactieve preview</span>
+          </div>
+          <button type="button"
+                  data-walkthrough
+                  data-title="Keizersgracht Residence — Living"
+                  data-scenes='["https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop","https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop","https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1600&auto=format&fit=crop"]'
+                  class="absolute inset-0 grid place-items-center w-full"
+                  aria-label="Bekijk de cinematische walkthrough-preview">
+            <span class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-cream/95 text-ink grid place-items-center shadow-2xl transition-transform duration-300 group-hover:scale-110 group-hover:bg-bronze group-hover:text-white">
+              <svg class="w-7 h-7 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </button>
+          <div class="absolute bottom-4 inset-x-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-cream pointer-events-none">
+            <div>
+              <span class="text-[10px] uppercase font-bold tracking-widest text-cream/70">Nu in beeld</span>
+              <p id="heroSceneLabel" class="text-sm sm:text-base font-extrabold leading-tight">Grachtenpand Keizersgracht — Living</p>
+            </div>
+            <span class="chip bg-white/20 backdrop-blur-md text-[11px] text-cream self-start sm:self-auto">Klik voor walkthrough</span>
+          </div>
+        </div>
+        <div class="hidden sm:flex absolute -bottom-5 -left-5 bg-coal text-cream p-4 rounded-2xl shadow-xl border border-white/10 items-center gap-3.5 float-badge">
+          <div class="w-11 h-11 rounded-xl bg-bronze/20 text-bronze-light grid place-items-center font-extrabold text-lg" aria-hidden="true">2.1×</div>
+          <div class="text-left">
+            <p class="text-xs font-bold leading-tight">Sneller verkocht</p>
+            <p class="text-[10px] text-cream/70">op Funda &amp; Pararius</p>
+          </div>
+        </div>
+        <div class="hidden sm:flex absolute -top-4 -right-4 bg-cream text-ink p-3.5 rounded-2xl shadow-lg border border-ink/10 items-center gap-3">
+          <span class="w-3 h-3 rounded-full bg-emerald-600" aria-hidden="true"></span>
+          <span class="text-xs font-extrabold tracking-wide">72 uur oplevering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CIJFERS ================= -->
+<!-- TODO: deze vier cijfers moet je kunnen onderbouwen als een makelaar
+     ernaar vraagt. Ze spreken nu ook de badge "2.1× sneller" tegen. -->
+<section class="py-10 border-t border-ink/5" aria-label="Kerncijfers">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 sm:p-8 rounded-3xl bg-sand border border-ink/5 text-center">
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">250+</p>
+        <p class="text-xs sm:text-sm font-semibold text-ink/70 mt-1">Gerealiseerde listings / jr</p>
+      </div>
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">72u</p>
+        <p class="text-xs sm:text-sm font-semibold text-ink/70 mt-1">Standaard oplevertermijn</p>
+      </div>
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">4.9 / 5</p>
+        <p class="text-xs sm:text-sm font-semibold text-ink/70 mt-1">Klantscore (180+ reviews)</p>
+      </div>
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">+38%</p>
+        <p class="text-xs sm:text-sm font-semibold text-ink/70 mt-1">Meer doorkliks op Funda</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOTO NAAR VIDEO ================= -->
+<section id="transform" class="py-20 lg:py-28 hero-glow-sand border-y border-ink/5">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto">
+      <span class="kicker kicker-center">Beeldtransformatie</span>
+      <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight">Van stilstaande foto naar <span class="font-serif-italic font-normal text-bronze">cinematische video</span></h2>
+      <p class="text-ink/80 mt-3 text-sm sm:text-base">Sleep de balk naar links of rechts en zie exact het effect dat wij toepassen: van een scherpe standfoto naar een vloeiende, filmische walkthrough.</p>
+    </div>
+    <div class="mt-12 max-w-5xl mx-auto">
+      <div class="p2v-container aspect-[16/10] sm:aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl border border-ink/10 bg-black relative" data-compare>
+        <div class="p2v-video-side absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Keuken met kookeiland, filmische bewerking" width="1600" height="900" loading="lazy" decoding="async" class="p2v-img-anim w-full h-full object-cover" style="filter:saturate(1.15) contrast(1.08) brightness(1.02);">
+          <div class="p2v-letterbox-top"></div>
+          <div class="p2v-letterbox-bottom"></div>
+          <div class="absolute inset-0 bg-gradient-to-tr from-bronze/15 via-transparent to-blue-900/10 mix-blend-overlay pointer-events-none"></div>
+          <div class="absolute top-[10%] left-4 right-4 flex items-center justify-between text-white z-10 pointer-events-none">
+            <div class="flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+              <span class="w-2 h-2 rounded-full bg-red-500 rec-blink" aria-hidden="true"></span>
+              <span class="text-[10px] font-extrabold uppercase tracking-widest">Cinematisch · 4K</span>
+            </div>
+            <span class="chip bg-black/60 backdrop-blur-md text-white text-[10px] border border-white/20">Vloeiende walkthrough</span>
+          </div>
+          <div class="absolute bottom-[10%] left-4 right-4 z-10 pointer-events-none">
+            <div class="bg-black/65 backdrop-blur-md rounded-xl p-2.5 flex items-center gap-3 border border-white/10">
+              <span class="text-white text-[10px] font-bold tabular-nums">0:08</span>
+              <div class="flex-1 h-1.5 bg-white/20 rounded-full overflow-hidden"><div class="h-full bg-bronze-light rounded-full" style="width:35%"></div></div>
+              <span class="text-white text-[10px] font-bold tabular-nums">0:24</span>
+            </div>
+          </div>
+        </div>
+        <div data-compare-side class="p2v-photo-side" style="width:50%;">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Dezelfde keuken als onbewerkte standfoto" width="1600" height="900" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover" style="width:100vw;max-width:none;">
+          <div class="absolute inset-0 bg-ink/5 pointer-events-none"></div>
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between text-white z-10 pointer-events-none">
+            <div class="flex items-center gap-2 bg-black/55 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="6" width="20" height="14" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+              <span class="text-[10px] font-extrabold uppercase tracking-widest">RAW / HDR stilstaand</span>
+            </div>
+            <span class="chip bg-black/55 backdrop-blur-md text-white text-[10px] border border-white/20">Standaard foto</span>
+          </div>
+          <div class="absolute bottom-4 left-4 z-10 bg-black/55 backdrop-blur-md rounded-lg px-3 py-1.5 border border-white/10 pointer-events-none">
+            <p class="text-white text-[9px] font-bold tracking-wider opacity-90">Canon TS-E · 17mm · F7.1 · 1/40s</p>
+          </div>
+        </div>
+        <button type="button" data-compare-handle class="p2v-handle" style="left:50%;" role="slider" aria-label="Vergelijk standfoto en cinematische versie" aria-valuemin="5" aria-valuemax="95" aria-valuenow="50">
+          <span class="p2v-circle">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+          </span>
+        </button>
+      </div>
+      <p class="text-center text-xs font-bold text-ink/60 mt-4 flex items-center justify-center gap-2">
+        <svg class="w-4 h-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <span>Sleep met je muis of vinger om de overgang te vergelijken — of gebruik de pijltjestoetsen</span>
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
+        <div class="bg-cream rounded-2xl p-4 border border-ink/10 text-center shadow-sm"><div class="w-9 h-9 rounded-xl bg-bronze/15 text-bronze-dark grid place-items-center mx-auto mb-2 font-bold" aria-hidden="true">1</div><p class="text-xs font-extrabold">Geen wiebelbeelden</p><p class="text-[10px] text-ink/65 mt-0.5">Ultra-vloeiende camerabeweging</p></div>
+        <div class="bg-cream rounded-2xl p-4 border border-ink/10 text-center shadow-sm"><div class="w-9 h-9 rounded-xl bg-bronze/15 text-bronze-dark grid place-items-center mx-auto mb-2 font-bold" aria-hidden="true">2</div><p class="text-xs font-extrabold">Filmische grading</p><p class="text-[10px] text-ink/65 mt-0.5">Warme en natuurlijke tinten</p></div>
+        <div class="bg-cream rounded-2xl p-4 border border-ink/10 text-center shadow-sm"><div class="w-9 h-9 rounded-xl bg-bronze/15 text-bronze-dark grid place-items-center mx-auto mb-2 font-bold" aria-hidden="true">3</div><p class="text-xs font-extrabold">Kopers zien meer</p><p class="text-[10px] text-ink/65 mt-0.5">Echte beleving van afmetingen</p></div>
+        <div class="bg-cream rounded-2xl p-4 border border-ink/10 text-center shadow-sm"><div class="w-9 h-9 rounded-xl bg-bronze/15 text-bronze-dark grid place-items-center mx-auto mb-2 font-bold" aria-hidden="true">4</div><p class="text-xs font-extrabold">Klaar voor social</p><p class="text-[10px] text-ink/65 mt-0.5">Funda (16:9) &amp; Reels (9:16)</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PIJLERS ================= -->
+<section class="py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="max-w-2xl">
+      <span class="kicker">Onze drie pijlers</span>
+      <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.1]">Waarom topmakelaars &amp; hosts voor <span class="font-serif-italic font-normal text-bronze">Studio Kader</span> kiezen</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 mt-14">
+      <div class="bg-sand p-8 sm:p-10 rounded-3xl border border-ink/5 hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-ink text-cream grid place-items-center group-hover:bg-bronze transition-colors duration-300" aria-hidden="true">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <h3 class="text-2xl font-extrabold tracking-tight mt-6">1. Haarscherpe fotografie</h3>
+          <p class="text-ink/80 leading-relaxed mt-3 text-sm sm:text-base">Geen overbelichte ramen of donkere hoeken. Met high-bracket multi-exposure HDR en kleurechte nabewerking tonen we het huis op z'n allerbest.</p>
+        </div>
+        <ul class="mt-6 pt-6 border-t border-ink/10 space-y-2 text-xs font-bold text-ink/85">
+          <li class="flex items-center gap-2"><span class="text-bronze" aria-hidden="true">✓</span>Tilt-shift architectuurlenzen</li>
+          <li class="flex items-center gap-2"><span class="text-bronze" aria-hidden="true">✓</span>Kaarsrechte zichtlijnen</li>
+          <li class="flex items-center gap-2"><span class="text-bronze" aria-hidden="true">✓</span>Subtiele styling ter plaatse</li>
+        </ul>
+      </div>
+      <div class="bg-coal text-cream p-8 sm:p-10 rounded-3xl border border-white/10 hover:border-bronze-light transition-all duration-300 flex flex-col justify-between group shadow-xl">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-bronze text-white grid place-items-center" aria-hidden="true">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/></svg>
+          </div>
+          <h3 class="text-2xl font-extrabold tracking-tight mt-6">2. Vloeiende walkthroughs</h3>
+          <p class="text-cream/80 leading-relaxed mt-3 text-sm sm:text-base">Onze unieke signatuur. We wekken haarscherpe foto's tot leven in een filmische camerabeweging met kalme, rustgevende overgangen.</p>
+        </div>
+        <ul class="mt-6 pt-6 border-t border-white/10 space-y-2 text-xs font-bold text-cream/85">
+          <li class="flex items-center gap-2"><span class="text-bronze-light" aria-hidden="true">✓</span>16:9 landscape voor Funda &amp; tv</li>
+          <li class="flex items-center gap-2"><span class="text-bronze-light" aria-hidden="true">✓</span>9:16 vertical voor Reels &amp; TikTok</li>
+          <li class="flex items-center gap-2"><span class="text-bronze-light" aria-hidden="true">✓</span>Inclusief kalme sfeermuziek</li>
+        </ul>
+      </div>
+      <div class="bg-sand p-8 sm:p-10 rounded-3xl border border-ink/5 hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-ink text-cream grid place-items-center group-hover:bg-bronze transition-colors duration-300" aria-hidden="true">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+          </div>
+          <h3 class="text-2xl font-extrabold tracking-tight mt-6">3. Direct meetbare leads</h3>
+          <!-- TODO: bron toevoegen of afzwakken — dit zijn harde claims. -->
+          <p class="text-ink/80 leading-relaxed mt-3 text-sm sm:text-base">Woningen met video blijven 3× langer bekeken op Funda en trekken kwalitatieve bieders. Airbnb accommodaties noteren gemiddeld 24% hogere conversie.</p>
+        </div>
+        <ul class="mt-6 pt-6 border-t border-ink/10 space-y-2 text-xs font-bold text-ink/85">
+          <li class="flex items-center gap-2"><span class="text-bronze" aria-hidden="true">✓</span>Verkooptijd gemiddeld -37%</li>
+          <li class="flex items-center gap-2"><span class="text-bronze" aria-hidden="true">✓</span>Meer serieuze bezichtigingen</li>
+          <li class="flex items-center gap-2"><span class="text-bronze" aria-hidden="true">✓</span>Binnen 72u direct online</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UITGELICHTE PROJECTEN ================= -->
+<section class="py-20 lg:py-28 bg-sand border-t border-ink/5 hero-glow-sand">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div>
+        <span class="kicker">Uitgelichte producties</span>
+        <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight">Recente <span class="font-serif-italic font-normal text-bronze">walkthroughs</span></h2>
+        <p class="text-ink/80 mt-3 text-sm sm:text-base max-w-lg">Klik op een project voor de volledige foto- en videopresentatie met achtergrond en resultaten.</p>
+      </div>
+      <a href="portfolio.html" class="btn btn-ghost text-xs uppercase tracking-wider font-extrabold shrink-0">
+        <span>Bekijk alle projecten</span>
+        <svg class="arr w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+      <!-- @@include:cards-home -->
+<article class="work-card relative rounded-3xl overflow-hidden shadow-md bg-coal aspect-[4/3] group" data-category="grachtenpand">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Woonkamer met stucplafond en hoge ramen" width="800" height="600" loading="lazy" decoding="async" class="work-img absolute inset-0 w-full h-full object-cover transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-coal/90 via-coal/20 to-transparent"></div>
+        <a href="projecten/keizersgracht-residence.html" class="absolute inset-0 z-10" aria-label="Bekijk het project Keizersgracht Residence"></a>
+        <span class="absolute top-4 left-4 chip bg-coal/70 text-cream backdrop-blur border border-white/15 z-20 pointer-events-none">Breda Centrum</span>
+        <button type="button" data-walkthrough data-title="Keizersgracht Residence" data-scenes="[&quot;https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&amp;w=1200&amp;auto=format&amp;fit=crop&quot;,&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&amp;w=1200&amp;auto=format&amp;fit=crop&quot;,&quot;https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&amp;w=1200&amp;auto=format&amp;fit=crop&quot;]" class="absolute top-4 right-4 chip bg-bronze text-white opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity flex items-center gap-1.5 z-20" aria-label="Bekijk de walkthrough-preview van Keizersgracht Residence">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Preview
+        </button>
+        <div class="absolute bottom-5 left-5 right-5 text-cream z-20 pointer-events-none">
+          <p class="text-xs font-bold text-bronze-light uppercase tracking-wider">Grachtenpand</p>
+          <h3 class="text-xl font-extrabold tracking-tight">Keizersgracht Residence</h3>
+          <p class="text-xs text-cream/80 mt-1">162 m² · Verkocht binnen 9 dagen</p>
+        </div>
+      </article>
+      <article class="work-card relative rounded-3xl overflow-hidden shadow-md bg-coal aspect-[4/3] group" data-category="villa">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Voorgevel van de villa in het gouden uur" width="800" height="600" loading="lazy" decoding="async" class="work-img absolute inset-0 w-full h-full object-cover transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-coal/90 via-coal/20 to-transparent"></div>
+        <a href="projecten/villa-mastbosrand.html" class="absolute inset-0 z-10" aria-label="Bekijk het project Villa Mastbosrand"></a>
+        <span class="absolute top-4 left-4 chip bg-coal/70 text-cream backdrop-blur border border-white/15 z-20 pointer-events-none">Mastbos, Breda</span>
+        <button type="button" data-walkthrough data-title="Villa Mastbosrand" data-scenes="[&quot;https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&amp;w=1200&amp;auto=format&amp;fit=crop&quot;,&quot;https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&amp;w=1200&amp;auto=format&amp;fit=crop&quot;,&quot;https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&amp;w=1200&amp;auto=format&amp;fit=crop&quot;]" class="absolute top-4 right-4 chip bg-bronze text-white opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity flex items-center gap-1.5 z-20" aria-label="Bekijk de walkthrough-preview van Villa Mastbosrand">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Preview
+        </button>
+        <div class="absolute bottom-5 left-5 right-5 text-cream z-20 pointer-events-none">
+          <p class="text-xs font-bold text-bronze-light uppercase tracking-wider">Villa / Landhuis</p>
+          <h3 class="text-xl font-extrabold tracking-tight">Villa Mastbosrand</h3>
+          <p class="text-xs text-cream/80 mt-1">310 m² · Funda Topper van de Maand</p>
+        </div>
+      </article>
+      <article class="work-card relative rounded-3xl overflow-hidden shadow-md bg-coal aspect-[4/3] group" data-category="airbnb">
+        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Boshut tussen de bomen" width="800" height="600" loading="lazy" decoding="async" class="work-img absolute inset-0 w-full h-full object-cover transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-coal/90 via-coal/20 to-transparent"></div>
+        <a href="projecten/the-forest-hideaway.html" class="absolute inset-0 z-10" aria-label="Bekijk het project The Forest Hideaway"></a>
+        <span class="absolute top-4 left-4 chip bg-coal/70 text-cream backdrop-blur border border-white/15 z-20 pointer-events-none">Markdal</span>
+        <button type="button" data-walkthrough data-title="The Forest Hideaway" data-scenes="[&quot;https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&amp;w=1200&amp;auto=format&amp;fit=crop&quot;,&quot;https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&amp;w=1200&amp;auto=format&amp;fit=crop&quot;,&quot;https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&amp;w=1200&amp;auto=format&amp;fit=crop&quot;]" class="absolute top-4 right-4 chip bg-bronze text-white opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity flex items-center gap-1.5 z-20" aria-label="Bekijk de walkthrough-preview van The Forest Hideaway">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Preview
+        </button>
+        <div class="absolute bottom-5 left-5 right-5 text-cream z-20 pointer-events-none">
+          <p class="text-xs font-bold text-bronze-light uppercase tracking-wider">Airbnb / Hospitality</p>
+          <h3 class="text-xl font-extrabold tracking-tight">The Forest Hideaway</h3>
+          <p class="text-xs text-cream/80 mt-1">94 m² · 94% Jaarbezetting · +€28 / nacht</p>
+        </div>
+      </article>
+<!-- @@endinclude -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= KLANTERVARINGEN ================= -->
+<!-- TODO: deze drie ervaringen staan hier zonder bron. Vraag je klanten om
+     een echte quote (en verwijs naar Google/Funda-reviews als je die hebt). -->
+<section class="py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto">
+      <span class="kicker kicker-center">Klantervaringen</span>
+      <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight">Wat makelaars en hosts <span class="font-serif-italic font-normal text-bronze">over ons zeggen</span></h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 mt-14">
+      <figure class="bg-sand p-8 rounded-3xl border border-ink/5 shadow-sm flex flex-col justify-between">
+        <blockquote>
+          <div class="text-amber-600 text-sm" aria-label="Vijf uit vijf sterren">★★★★★</div>
+          <p class="mt-4 text-ink/85 text-sm sm:text-base leading-relaxed italic">"De walkthrough zorgde ervoor dat potentiële kopers al verliefd waren vóór de bezichtiging. Binnen 10 dagen verkocht met meerdere biedingen boven vraagprijs."</p>
+        </blockquote>
+        <figcaption class="mt-6 pt-6 border-t border-ink/10 flex items-center gap-3.5">
+          <span class="w-10 h-10 rounded-full bg-bronze/20 text-bronze-dark font-extrabold grid place-items-center text-xs" aria-hidden="true">SB</span>
+          <span>
+            <span class="block text-sm font-extrabold">Sanne de Boer</span>
+            <span class="block text-xs text-ink/65">NVM Makelaar Breda</span>
+          </span>
+        </figcaption>
+      </figure>
+      <figure class="bg-sand p-8 rounded-3xl border border-ink/5 shadow-sm flex flex-col justify-between">
+        <blockquote>
+          <div class="text-amber-600 text-sm" aria-label="Vijf uit vijf sterren">★★★★★</div>
+          <p class="mt-4 text-ink/85 text-sm sm:text-base leading-relaxed italic">"Dankzij de nieuwe foto's en video walkthrough ging onze Airbnb bezetting van 68% naar 94%. We konden onze nachtprijs met €22 verhogen. Binnen twee weken terugverdiend!"</p>
+        </blockquote>
+        <figcaption class="mt-6 pt-6 border-t border-ink/10 flex items-center gap-3.5">
+          <span class="w-10 h-10 rounded-full bg-bronze/20 text-bronze-dark font-extrabold grid place-items-center text-xs" aria-hidden="true">MJ</span>
+          <span>
+            <span class="block text-sm font-extrabold">Mark Jansen</span>
+            <span class="block text-xs text-ink/65">Superhost 3 vakantievilla's</span>
+          </span>
+        </figcaption>
+      </figure>
+      <figure class="bg-sand p-8 rounded-3xl border border-ink/5 shadow-sm flex flex-col justify-between">
+        <blockquote>
+          <div class="text-amber-600 text-sm" aria-label="Vijf uit vijf sterren">★★★★★</div>
+          <p class="mt-4 text-ink/85 text-sm sm:text-base leading-relaxed italic">"Fijn dat je altijd met dezelfde twee mensen schakelt. Kasper &amp; Gio denken mee over meubelopstelling en lichtinval, zijn punctueel en leveren binnen 72 uur zonder gedoe op."</p>
+        </blockquote>
+        <figcaption class="mt-6 pt-6 border-t border-ink/10 flex items-center gap-3.5">
+          <span class="w-10 h-10 rounded-full bg-bronze/20 text-bronze-dark font-extrabold grid place-items-center text-xs" aria-hidden="true">FA</span>
+          <span>
+            <span class="block text-sm font-extrabold">Fatima El Amrani</span>
+            <span class="block text-xs text-ink/65">Vastgoedontwikkelaar Breda</span>
+          </span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VEELGESTELDE VRAGEN ================= -->
+<section class="py-20 lg:py-28 bg-sand border-t border-ink/5">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center">
+        <span class="kicker kicker-center">Veelgestelde vragen</span>
+        <h2 class="mt-3 text-3xl font-extrabold tracking-tight">Alles wat je wilt weten over de werkwijze</h2>
+      </div>
+      <div class="mt-10 space-y-3.5">
+
+        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-1" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
+              <span>Hoe snel ontvangen wij de definitieve beelden?</span>
+              <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-1"><p class="pt-4 text-ink/80 text-sm leading-relaxed">De foto's en video walkthroughs leveren we standaard <strong>binnen 72 uur</strong> na de shoot digitaal in hoge én Funda-geoptimaliseerde resolutie.</p></div>
+        </div>
+
+        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-2" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
+              <span>Zijn de video walkthroughs direct geschikt voor Funda?</span>
+              <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-2"><p class="pt-4 text-ink/80 text-sm leading-relaxed">Jazeker! We exporteren conform de exacte specificaties van Funda, Pararius en YouTube (16:9 Full HD/4K MP4 zonder watermerken). Bij pakket 3 ontvang je ook alle social formaten.</p></div>
+        </div>
+
+        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-3" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
+              <span>Kan ik ook alleen een video laten maken?</span>
+              <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-3"><p class="pt-4 text-ink/80 text-sm leading-relaxed">Ja, dat kan — maar alléén als je zelf je eigen HDR/RAW foto's van voldoende kwaliteit aanlevert. Wij maken daar de cinematische walkthrough van, dit kost €295.</p></div>
+        </div>
+
+        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-4" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
+              <span>Hoe moeten we de woning voorbereiden op de shoot?</span>
+              <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-4"><p class="pt-4 text-ink/80 text-sm leading-relaxed">Na je reservering sturen we direct onze praktische '10-punten voorbereidingsgids'. Tijdens de opname helpt Kasper bovendien met styling en het weghalen van afleidende voorwerpen.</p></div>
+        </div>
+
+        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-5" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
+              <span>Werken jullie alleen in Breda?</span>
+              <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-5"><p class="pt-4 text-ink/80 text-sm leading-relaxed">Onze uitvalsbasis is <strong>Breda</strong>. Binnen Zuid-Nederland en de Randstad rekenen we geen reiskosten. Daarbuiten hanteren we een helder kilometertarief van €0,35 per km.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AFSLUITENDE CTA ================= -->
+<section class="py-20 lg:py-28 bg-coal text-cream relative overflow-hidden">
+  <div class="absolute inset-0 opacity-30" style="background:radial-gradient(850px 500px at 92% 10%, rgba(169,137,91,.14), transparent 70%), radial-gradient(650px 500px at 4% 92%, rgba(169,137,91,.10), transparent 65%)" aria-hidden="true"></div>
+  <div class="mx-auto max-w-7xl px-5 sm:px-8 relative z-10">
+    <div class="text-center max-w-3xl mx-auto">
+      <span class="kicker kicker-center text-bronze-light">Klaar om te beginnen?</span>
+      <h2 class="mt-4 text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">Laat je vastgoed er direct <span class="font-serif-italic font-normal text-bronze-light">bovenuit steken</span></h2>
+      <p class="mt-5 text-cream/80 text-base sm:text-lg leading-relaxed max-w-xl mx-auto">Binnen 72 uur geleverd. Persoonlijk contact met Kasper &amp; Gio. Vrijblijvende offerte binnen 2 uur in je mailbox.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="btn btn-bronze">
+          <span>Direct offerte aanvragen</span>
+          <svg class="arr w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="https://wa.me/31762408890" target="_blank" rel="noopener" class="btn btn-ghost-light">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
+          <span>WhatsApp ons</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- @@include:footer -->
+<footer class="bg-coal text-cream pt-16 pb-28 sm:pb-10 border-t border-white/10">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2.5">
+          <span class="w-9 h-9 rounded-xl bg-bronze text-coal grid place-items-center font-extrabold text-base" aria-hidden="true">K</span>
+          <span class="font-extrabold tracking-tight text-lg">Studio Kader<span class="text-bronze">.</span></span>
+        </div>
+        <p class="mt-5 text-cream/75 text-sm leading-relaxed max-w-md">High-end interieurfotografie en cinematische video walkthroughs. Gevestigd in Breda, werkzaam in heel Zuid-Nederland en de Randstad. Standaard binnen 72 uur geleverd.</p>
+        <div class="mt-6 flex items-center gap-3">
+          <!-- TODO: vervang deze # door de echte profiel-URL's, of haal het icoon weg -->
+          <a href="#" class="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:bg-bronze hover:border-bronze transition-colors" aria-label="Studio Kader op Instagram"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+          <a href="#" class="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:bg-bronze hover:border-bronze transition-colors" aria-label="Studio Kader op LinkedIn"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.7a1.8 1.8 0 1 1 0-3.5 1.8 1.8 0 0 1 0 3.5zM20 19h-3v-5.6c0-3.4-4-3.1-4 0V19h-3V8h3v1.8c1.4-2.6 7-2.8 7 2.5V19z"/></svg></a>
+          <a href="https://wa.me/31762408890" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:bg-bronze hover:border-bronze transition-colors" aria-label="Studio Kader op WhatsApp"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.4C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3.1.9.9-3-.2-.3C4 14.7 3.5 13.4 3.5 12 3.5 7.3 7.3 3.5 12 3.5S20.5 7.3 20.5 12 16.7 20 12 20z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-xs font-extrabold uppercase tracking-widest text-bronze-light">Sitemap</h2>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="index.html" class="text-cream/75 hover:text-cream transition-colors">Home</a></li>
+          <li><a href="portfolio.html" class="text-cream/75 hover:text-cream transition-colors">Portfolio</a></li>
+          <li><a href="over-ons.html" class="text-cream/75 hover:text-cream transition-colors">Over Ons</a></li>
+          <li><a href="werkwijze.html" class="text-cream/75 hover:text-cream transition-colors">Werkwijze</a></li>
+          <li><a href="tarieven.html" class="text-cream/75 hover:text-cream transition-colors">Tarieven</a></li>
+          <li><a href="contact.html" class="text-cream/75 hover:text-cream transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xs font-extrabold uppercase tracking-widest text-bronze-light">Contact</h2>
+        <ul class="mt-4 space-y-2 text-sm text-cream/75">
+          <li><a href="mailto:hallo@studiokader.nl" class="hover:text-cream transition-colors">hallo@studiokader.nl</a></li>
+          <li><a href="tel:+31762408890" class="hover:text-cream transition-colors">+31 76 240 88 90</a></li>
+          <li>Breda, Nederland</li>
+        </ul>
+        <a href="contact.html" class="btn btn-bronze !py-2.5 !px-4 !text-xs mt-5">Offerte Aanvragen</a>
+      </div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/60">
+      <p>© <span data-year></span> Studio Kader — Alle rechten voorbehouden.</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+        <a href="privacyverklaring.html" class="hover:text-cream transition-colors">Privacyverklaring</a>
+        <a href="voorwaarden.html" class="hover:text-cream transition-colors">Algemene voorwaarden</a>
+        <!-- TODO: vul hier je ECHTE KVK- en BTW-nummer in. De huidige nummers
+             zijn placeholders uit het ontwerp en mogen niet live. -->
+        <span>KVK 81234567 · BTW NL862014589B01</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- @@endinclude -->
+
+<!-- @@include:overlays -->
+<!-- MELDING -->
+<div id="toast" role="status" aria-live="polite" class="fixed bottom-24 left-1/2 -translate-x-1/2 translate-y-28 opacity-0 z-[150] transition-all duration-500 pointer-events-none px-4 w-full max-w-md">
   <div class="flex items-center gap-3 bg-coal text-cream pl-4 pr-6 py-3.5 rounded-full shadow-2xl border border-white/15">
-    <span class="w-7 h-7 rounded-full bg-bronze text-white grid place-items-center shrink-0">
+    <span class="w-7 h-7 rounded-full bg-bronze text-white grid place-items-center shrink-0" aria-hidden="true">
       <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
     </span>
-    <span id="toastText" class="text-xs sm:text-sm font-bold tracking-wide">Actie succesvol uitgevoerd!</span>
+    <span id="toastText" class="text-xs sm:text-sm font-bold tracking-wide"></span>
   </div>
 </div>
 
-<!-- WALKTHROUGH MODAL -->
-<div id="walkthroughModal" class="fixed inset-0 z-[130] hidden">
-  <div class="absolute inset-0 bg-coal/90 backdrop-blur-md" onclick="closeWalkthroughModal()"></div>
+<!-- WALKTHROUGH-VENSTER -->
+<div id="walkthroughModal" class="fixed inset-0 z-[130] hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="absolute inset-0 bg-coal/90 backdrop-blur-md" data-modal-close></div>
   <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[94%] max-w-4xl">
     <div class="bg-coal rounded-3xl overflow-hidden shadow-2xl border border-white/10">
       <div class="flex items-center justify-between p-4 sm:p-5 border-b border-white/10">
         <div>
-          <span id="modalKicker" class="text-[10px] uppercase font-bold tracking-widest text-bronze-light">Cinematische Walkthrough</span>
-          <h3 id="modalTitle" class="text-base sm:text-lg font-extrabold text-cream">Keizersgracht Residence — Living</h3>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-bronze-light">Cinematische Walkthrough</span>
+          <h2 id="modalTitle" class="text-base sm:text-lg font-extrabold text-cream"></h2>
         </div>
-        <button onclick="closeWalkthroughModal()" class="w-9 h-9 rounded-full border border-white/20 grid place-items-center text-cream hover:bg-white/10 transition-colors" aria-label="Sluiten">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        <button type="button" data-modal-close class="w-9 h-9 rounded-full border border-white/20 grid place-items-center text-cream hover:bg-white/10 transition-colors" aria-label="Venster sluiten">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
       </div>
       <div class="relative aspect-video bg-black overflow-hidden select-none">
         <div id="modalScenes" class="absolute inset-0"></div>
         <div class="absolute inset-0 vignette pointer-events-none"></div>
         <div class="absolute top-4 left-4 flex items-center gap-2 bg-coal/70 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full text-cream text-[10px] font-extrabold uppercase tracking-widest">
-          <span class="w-2 h-2 rounded-full bg-red-500 rec-blink"></span>
-          <span>4K CINEMATIC · 24 FPS</span>
+          <span class="w-2 h-2 rounded-full bg-red-500 rec-blink" aria-hidden="true"></span>
+          <span>4K Cinematic · 24 fps</span>
         </div>
         <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-coal via-coal/60 to-transparent">
           <div class="flex items-center gap-3 text-cream">
-            <button onclick="toggleModalPlay()" id="modalPlayBtn" class="w-10 h-10 rounded-full bg-cream text-ink grid place-items-center hover:bg-bronze hover:text-white transition-colors shrink-0" aria-label="Afspelen">
-              <svg id="modalPlayIcon" class="w-4 h-4 ml-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg>
+            <button type="button" id="modalPlayBtn" class="w-10 h-10 rounded-full bg-cream text-ink grid place-items-center hover:bg-bronze hover:text-white transition-colors shrink-0" aria-label="Afspelen">
+              <svg id="modalPlayIcon" class="w-4 h-4 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
             </button>
             <div class="flex-1 h-1 bg-white/20 rounded-full overflow-hidden">
               <div id="modalProgress" class="h-full bg-bronze-light rounded-full transition-all duration-100" style="width:0%"></div>
@@ -172,1221 +677,33 @@ body{font-family:'Manrope',sans-serif;background-color:var(--cream);color:#16141
   </div>
 </div>
 
-<!-- LIGHTBOX -->
-<div id="lightbox" class="fixed inset-0 z-[140] hidden">
-  <div class="absolute inset-0 bg-black/92" onclick="closeLightbox()"></div>
-  <button onclick="closeLightbox()" class="absolute top-5 right-5 z-10 w-11 h-11 rounded-full border border-white/25 text-white grid place-items-center hover:bg-white/10">
-    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+<!-- LICHTBAK -->
+<div id="lightbox" class="fixed inset-0 z-[140] hidden" role="dialog" aria-modal="true" aria-label="Foto bekijken">
+  <div class="absolute inset-0 bg-black/95" data-lightbox-close></div>
+  <button type="button" data-lightbox-close class="absolute top-5 right-5 z-10 w-11 h-11 rounded-full border border-white/25 text-white grid place-items-center hover:bg-white/10" aria-label="Sluiten">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
   </button>
-  <button onclick="lightboxNav(-1)" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/10 border border-white/25 text-white grid place-items-center hover:bg-white/20">
-    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+  <button type="button" data-lightbox-prev class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/10 border border-white/25 text-white grid place-items-center hover:bg-white/20" aria-label="Vorige foto">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
   </button>
-  <button onclick="lightboxNav(1)" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/10 border border-white/25 text-white grid place-items-center hover:bg-white/20">
-    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg>
+  <button type="button" data-lightbox-next class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/10 border border-white/25 text-white grid place-items-center hover:bg-white/20" aria-label="Volgende foto">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
   </button>
-  <div class="absolute inset-0 flex items-center justify-center p-6 sm:p-16">
-    <img id="lightboxImg" src="" alt="Preview" class="max-w-full max-h-full rounded-xl shadow-2xl object-contain">
+  <div class="absolute inset-0 flex items-center justify-center p-6 sm:p-16 pointer-events-none">
+    <img id="lightboxImg" src="" alt="" class="max-w-full max-h-full rounded-xl shadow-2xl object-contain">
   </div>
-  <div class="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/70 text-xs font-bold tabular-nums" id="lightboxCounter">1 / 6</div>
+  <div class="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/80 text-xs font-bold tabular-nums" id="lightboxCounter"></div>
 </div>
 
-<!-- WHATSAPP FLOATING BUTTON -->
-<a href="https://wa.me/31762408890?text=Hoi%20Studio%20Kader%2C%20ik%20wil%20graag%20meer%20weten%20over%20een%20fotoshoot." target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp ons">
-  <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+<!-- WHATSAPP-KNOP -->
+<a href="https://wa.me/31762408890?text=Hoi%20Studio%20Kader%2C%20ik%20wil%20graag%20meer%20weten%20over%20een%20fotoshoot." target="_blank" rel="noopener" class="wa-float" aria-label="Stuur ons een bericht via WhatsApp">
+  <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.9-.4-1.9-1-2.7-1.9-.7-.7-1.2-1.5-1.5-2.2-.1-.3 0-.4.1-.6.2-.2.5-.5.6-.7.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 1.9 3 4.7 4.1 2.7 1.1 2.7.8 3.2.7.5 0 1.6-.6 1.8-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3z"/>
     <path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.4C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3.1.9.9-3-.2-.3C4 14.7 3.5 13.4 3.5 12 3.5 7.3 7.3 3.5 12 3.5S20.5 7.3 20.5 12 16.7 20 12 20z"/>
   </svg>
 </a>
+<!-- @@endinclude -->
 
-<!-- HEADER -->
-<header id="mainHeader" class="sticky top-0 z-50 bg-cream/90 backdrop-blur-xl border-b border-ink/5">
-  <div class="mx-auto max-w-7xl px-4 sm:px-8">
-    <div class="flex items-center justify-between py-3 sm:py-5 gap-2">
-      <a href="#" onclick="navigateTo('home');return false;" class="flex items-center gap-2 group cursor-pointer min-w-0" aria-label="Studio Kader Home">
-        <span class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-ink text-cream grid place-items-center font-extrabold text-sm sm:text-base group-hover:bg-bronze transition-colors duration-300 shadow-sm shrink-0">K</span>
-        <span class="header-logo-text font-extrabold tracking-tight text-[15px] sm:text-[20px] leading-none whitespace-nowrap truncate">
-          Studio Kader<span class="text-bronze">.</span>
-        </span>
-      </a>
-      <nav class="hidden lg:flex items-center gap-8 text-[13.5px] font-bold">
-        <button onclick="navigateTo('home')" class="nav-btn active" data-page="home">Home</button>
-        <button onclick="navigateTo('portfolio')" class="nav-btn" data-page="portfolio">Portfolio</button>
-        <button onclick="navigateTo('overons')" class="nav-btn" data-page="overons">Over Ons</button>
-        <button onclick="navigateTo('diensten')" class="nav-btn" data-page="diensten">Werkwijze</button>
-        <button onclick="navigateTo('tarieven')" class="nav-btn" data-page="tarieven">Tarieven</button>
-        <button onclick="navigateTo('contact')" class="nav-btn" data-page="contact">Contact</button>
-      </nav>
-      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-        <button onclick="navigateTo('contact')" class="btn btn-dark !py-2.5 !px-5 text-xs font-bold tracking-wider hidden sm:inline-flex">
-          <span>OFFERTE AANVRAGEN</span>
-          <svg class="arr w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </button>
-        <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 rounded-full border border-ink/15 grid place-items-center hover:bg-ink hover:text-cream transition-colors shrink-0" aria-label="Menu openen">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- MOBILE DRAWER -->
-<div id="mobileDrawer" class="fixed inset-0 z-[100] lg:hidden pointer-events-none opacity-0 transition-opacity duration-300">
-  <div id="drawerBackdrop" class="absolute inset-0 bg-coal/60 backdrop-blur-sm"></div>
-  <div id="drawerPanel" class="absolute right-0 top-0 h-full w-[85%] max-w-sm bg-cream shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col p-6 pointer-events-auto overflow-y-auto">
-    <div class="flex items-center justify-between pb-6 border-b border-ink/10">
-      <span class="font-extrabold tracking-tight text-lg">Studio Kader<span class="text-bronze">.</span></span>
-      <button id="drawerClose" class="w-10 h-10 rounded-full border border-ink/15 grid place-items-center hover:bg-ink hover:text-cream transition-colors" aria-label="Sluiten">
-        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
-      </button>
-    </div>
-    <nav class="flex flex-col py-6 space-y-1 text-base font-bold">
-      <button onclick="mobileNav('home')" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand text-left"><span>Home</span><span class="text-xs text-bronze font-extrabold">01</span></button>
-      <button onclick="mobileNav('portfolio')" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand text-left"><span>Portfolio &amp; Walkthroughs</span><span class="text-xs text-bronze font-extrabold">02</span></button>
-      <button onclick="mobileNav('overons')" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand text-left"><span>Over Ons</span><span class="text-xs text-bronze font-extrabold">03</span></button>
-      <button onclick="mobileNav('diensten')" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand text-left"><span>Werkwijze &amp; Kwaliteit</span><span class="text-xs text-bronze font-extrabold">04</span></button>
-      <button onclick="mobileNav('tarieven')" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand text-left"><span>Pakketten &amp; Tarieven</span><span class="text-xs text-bronze font-extrabold">05</span></button>
-      <button onclick="mobileNav('contact')" class="flex items-center justify-between py-3.5 px-3 rounded-xl hover:bg-sand text-left"><span>Contact &amp; Offerte</span><span class="text-xs text-bronze font-extrabold">06</span></button>
-    </nav>
-    <div class="mt-auto pt-6 border-t border-ink/10 flex flex-col gap-3">
-      <a href="https://wa.me/31762408890" target="_blank" class="btn btn-ghost w-full text-center">WhatsApp Ons</a>
-      <div class="text-center text-xs text-ink/60 font-medium pt-2">
-        <p>hallo@studiokader.nl</p>
-        <p class="mt-0.5">+31 76 240 88 90 · Breda</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<main class="min-h-screen">
-
-<!-- ================= VIEW HOME ================= -->
-<div id="view-home" class="page-view active">
-<section id="hero" class="relative hero-glow overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-      <div class="lg:col-span-6 z-10">
-        <span class="kicker fade-in-up">Interieurfotografie &amp; Cinematische Walkthroughs</span>
-        <h1 class="mt-5 text-4xl sm:text-5xl lg:text-[3.85rem] font-extrabold tracking-tight leading-[1.05] fade-in-up fade-delay-1">
-          Transformeer je woningpresentatie <span class="font-serif-italic font-normal text-bronze">& verkoop sneller</span>
-        </h1>
-        <p class="mt-6 text-base sm:text-lg text-ink/75 leading-relaxed max-w-xl fade-in-up fade-delay-2">
-          Wij fotograferen elk interieur met architectonische precisie en wekken beelden tot leven in ultra-vloeiende video walkthroughs. Zo beleven potentiële kopers en gasten de ziel van het huis <strong class="text-ink font-semibold">alsof ze er zelf doorheen lopen</strong>.
-        </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center fade-in-up fade-delay-3">
-          <button onclick="navigateTo('contact')" class="btn btn-dark">
-            <span>Direct Offerte Aanvragen</span>
-            <svg class="arr w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </button>
-          <button onclick="navigateTo('portfolio')" class="btn btn-ghost">
-            <svg class="w-4 h-4 text-bronze" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            <span>Bekijk Walkthroughs</span>
-          </button>
-        </div>
-        <div class="mt-10 pt-8 border-t border-ink/10 flex flex-wrap items-center gap-4 sm:gap-6 text-xs sm:text-sm font-bold text-ink/70">
-          <div class="flex items-center gap-2">
-            <span class="flex text-amber-500">★★★★★</span>
-            <span>4.9/5 (180+ listings)</span>
-          </div>
-          <span class="w-1.5 h-1.5 rounded-full bg-ink/20 hidden sm:block"></span>
-          <span>Funda &amp; NVM gecertificeerd</span>
-          <span class="w-1.5 h-1.5 rounded-full bg-ink/20 hidden sm:block"></span>
-          <span>Binnen 72u opgeleverd</span>
-        </div>
-      </div>
-      <div class="lg:col-span-6 relative">
-        <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-coal aspect-[4/3] sm:aspect-[16/11] border border-ink/10 group cursor-pointer" onclick="openWalkthroughModal('grachtenpand')">
-          <div id="heroHeroScenes" class="absolute inset-0">
-            <div class="kb-scene active" data-fx="zoom"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop" alt="Luxe woonkamer" class="w-full h-full object-cover"></div>
-            <div class="kb-scene" data-fx="pan"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop" alt="Kookeiland" class="w-full h-full object-cover"></div>
-            <div class="kb-scene" data-fx="tilt"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1400&auto=format&fit=crop" alt="Master suite" class="w-full h-full object-cover"></div>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-coal/85 via-transparent to-black/20 pointer-events-none"></div>
-          <div class="absolute inset-0 vignette pointer-events-none"></div>
-          <div class="absolute top-4 left-4 flex items-center gap-2 bg-coal/70 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full text-cream text-[11px] font-extrabold uppercase tracking-widest">
-            <span class="w-2 h-2 rounded-full bg-amber-400 live-dot"></span>
-            <span>Interactieve Preview</span>
-          </div>
-          <div class="absolute inset-0 grid place-items-center">
-            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-cream/95 text-ink grid place-items-center shadow-2xl transition-transform duration-300 group-hover:scale-110 group-hover:bg-bronze group-hover:text-white">
-              <svg class="w-7 h-7 ml-1" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-          </div>
-          <div class="absolute bottom-4 inset-x-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-cream">
-            <div>
-              <span class="text-[10px] uppercase font-bold tracking-widest text-cream/60">Nu in beeld</span>
-              <p id="heroSceneLabel" class="text-sm sm:text-base font-extrabold leading-tight">Grachtenpand Keizersgracht — Living</p>
-            </div>
-            <span class="chip bg-white/20 backdrop-blur-md text-[11px] text-cream self-start sm:self-auto">Klik voor Walkthrough</span>
-          </div>
-        </div>
-        <div class="hidden sm:flex absolute -bottom-5 -left-5 bg-coal text-cream p-4 rounded-2xl shadow-xl border border-white/10 items-center gap-3.5 float-badge">
-          <div class="w-11 h-11 rounded-xl bg-bronze/20 text-bronze-light grid place-items-center font-extrabold text-lg">2.1×</div>
-          <div class="text-left">
-            <p class="text-xs font-bold leading-tight">Sneller Verkocht</p>
-            <p class="text-[10px] text-cream/60">op Funda &amp; Pararius</p>
-          </div>
-        </div>
-        <div class="hidden sm:flex absolute -top-4 -right-4 bg-cream text-ink p-3.5 rounded-2xl shadow-lg border border-ink/10 items-center gap-3">
-          <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
-          <span class="text-xs font-extrabold tracking-wide">72 Uur Oplevering</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING STRIP -->
-<section class="py-10 border-t border-ink/5">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 sm:p-8 rounded-3xl bg-sand border border-ink/5 text-center">
-      <div>
-        <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">250+</p>
-        <p class="text-xs sm:text-sm font-semibold text-ink/60 mt-1">Gerealiseerde listings / jr</p>
-      </div>
-      <div>
-        <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">72u</p>
-        <p class="text-xs sm:text-sm font-semibold text-ink/60 mt-1">Standaard oplevertermijn</p>
-      </div>
-      <div>
-        <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">4.9 / 5</p>
-        <p class="text-xs sm:text-sm font-semibold text-ink/60 mt-1">Klantscore (180+ reviews)</p>
-      </div>
-      <div>
-        <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">+38%</p>
-        <p class="text-xs sm:text-sm font-semibold text-ink/60 mt-1">Meer doorkliks op Funda</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- LOGO MARQUEE -->
-<section class="bg-coal text-cream py-9 overflow-hidden border-y border-white/10" aria-label="Klanten en partners">
-  <div class="mx-auto max-w-7xl px-5 mb-4 text-center">
-    <p class="text-[10px] uppercase tracking-[0.28em] text-cream/40 font-bold">Vertrouwd door toonaangevende makelaarskantoren &amp; platforms</p>
-  </div>
-  <div class="relative w-full overflow-hidden">
-    <div class="logo-marquee-inner items-center" id="logoMarquee"></div>
-  </div>
-</section>
-
-<!-- PHOTO TO VIDEO TRANSFORMATION -->
-<section id="transform" class="py-20 lg:py-28 hero-glow-sand border-b border-ink/5">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="text-center max-w-2xl mx-auto">
-      <span class="kicker kicker-center">Beeldtransformatie</span>
-      <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight">Van stilstaande foto naar <span class="font-serif-italic font-normal text-bronze">cinematische video</span></h2>
-      <p class="text-ink/70 mt-3 text-sm sm:text-base">Sleep de balk naar links of rechts en zie exact het effect dat wij toepassen: van een scherpe standfoto naar een vloeiende, filmische walkthrough.</p>
-    </div>
-    <div class="mt-12 max-w-5xl mx-auto">
-      <div id="p2vBox" class="p2v-container aspect-[16/10] sm:aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl border border-ink/10 bg-black relative">
-        <div class="p2v-video-side absolute inset-0">
-          <img id="p2vVideoImg" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Cinematisch" class="p2v-img-anim w-full h-full object-cover" style="filter:saturate(1.15) contrast(1.08) brightness(1.02);">
-          <div class="p2v-letterbox-top"></div>
-          <div class="p2v-letterbox-bottom"></div>
-          <div class="absolute inset-0 bg-gradient-to-tr from-bronze/15 via-transparent to-blue-900/10 mix-blend-overlay pointer-events-none"></div>
-          <div class="absolute top-[10%] left-4 right-4 flex items-center justify-between text-white z-10">
-            <div class="flex items-center gap-2 bg-black/55 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
-              <span class="w-2 h-2 rounded-full bg-red-500 rec-blink"></span>
-              <span class="text-[10px] font-extrabold uppercase tracking-widest">CINEMATISCH · 4K</span>
-            </div>
-            <span class="chip bg-black/55 backdrop-blur-md text-white text-[10px] border border-white/20">VLOEIENDE WALKTHROUGH</span>
-          </div>
-          <div class="absolute bottom-[10%] left-4 right-4 z-10">
-            <div class="bg-black/60 backdrop-blur-md rounded-xl p-2.5 flex items-center gap-3 border border-white/10">
-              <span class="text-white text-[10px] font-bold tabular-nums">0:08</span>
-              <div class="flex-1 h-1.5 bg-white/20 rounded-full overflow-hidden"><div class="h-full bg-bronze-light rounded-full" style="width:35%"></div></div>
-              <span class="text-white text-[10px] font-bold tabular-nums">0:24</span>
-            </div>
-          </div>
-        </div>
-        <div id="p2vPhotoSide" class="p2v-photo-side" style="width:50%;">
-          <img id="p2vPhotoImg" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Statisch" class="absolute inset-0 w-full h-full object-cover" style="width:100vw;max-width:none;">
-          <div class="absolute inset-0 bg-ink/5 pointer-events-none"></div>
-          <div class="absolute top-4 left-4 right-4 flex items-center justify-between text-white z-10">
-            <div class="flex items-center gap-2 bg-black/45 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
-              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="14" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
-              <span class="text-[10px] font-extrabold uppercase tracking-widest">RAW / HDR STILSTAAND</span>
-            </div>
-            <span class="chip bg-black/45 backdrop-blur-md text-white text-[10px] border border-white/20">STANDAARD FOTO</span>
-          </div>
-          <div class="absolute bottom-4 left-4 z-10 bg-black/45 backdrop-blur-md rounded-lg px-3 py-1.5 border border-white/10">
-            <p class="text-white text-[9px] font-bold tracking-wider opacity-80">Canon TS-E · 17mm · F7.1 · 1/40s</p>
-          </div>
-        </div>
-        <div id="p2vHandle" class="p2v-handle" style="left:50%;">
-          <div class="p2v-circle" title="Sleep">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
-          </div>
-        </div>
-      </div>
-      <p class="text-center text-xs font-bold text-ink/50 mt-4 flex items-center justify-center gap-2">
-        <svg class="w-4 h-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-        <span>Beweeg de muis of sleep met je vinger om de overgang te vergelijken</span>
-      </p>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
-        <div class="bg-cream rounded-2xl p-4 border border-ink/10 text-center shadow-sm"><div class="w-9 h-9 rounded-xl bg-bronze/15 text-bronze-dark grid place-items-center mx-auto mb-2 font-bold">1</div><p class="text-xs font-extrabold">Geen Wiebelbeelden</p><p class="text-[10px] text-ink/55 mt-0.5">Ultra-vloeiende camerabeweging</p></div>
-        <div class="bg-cream rounded-2xl p-4 border border-ink/10 text-center shadow-sm"><div class="w-9 h-9 rounded-xl bg-bronze/15 text-bronze-dark grid place-items-center mx-auto mb-2 font-bold">2</div><p class="text-xs font-extrabold">Filmische Grading</p><p class="text-[10px] text-ink/55 mt-0.5">Warme en natuurlijke tinten</p></div>
-        <div class="bg-cream rounded-2xl p-4 border border-ink/10 text-center shadow-sm"><div class="w-9 h-9 rounded-xl bg-bronze/15 text-bronze-dark grid place-items-center mx-auto mb-2 font-bold">3</div><p class="text-xs font-extrabold">Kopers Zien Meer</p><p class="text-[10px] text-ink/55 mt-0.5">Echte beleving van afmetingen</p></div>
-        <div class="bg-cream rounded-2xl p-4 border border-ink/10 text-center shadow-sm"><div class="w-9 h-9 rounded-xl bg-bronze/15 text-bronze-dark grid place-items-center mx-auto mb-2 font-bold">4</div><p class="text-xs font-extrabold">Klaar voor Social</p><p class="text-[10px] text-ink/55 mt-0.5">Funda (16:9) &amp; Reels (9:16)</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PILLARS -->
-<section id="pillars" class="py-20 lg:py-28">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="max-w-2xl">
-      <span class="kicker">Onze Drie Pijlers</span>
-      <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.1]">Waarom topmakelaars &amp; hosts voor <span class="font-serif-italic font-normal text-bronze">Studio Kader</span> kiezen</h2>
-    </div>
-    <div class="grid md:grid-cols-3 gap-8 mt-14">
-      <div class="bg-sand p-8 sm:p-10 rounded-3xl border border-ink/5 hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between group">
-        <div>
-          <div class="w-12 h-12 rounded-2xl bg-ink text-cream grid place-items-center group-hover:bg-bronze transition-colors duration-300">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-          </div>
-          <h3 class="text-2xl font-extrabold tracking-tight mt-6">1. Haarscherpe Fotografie</h3>
-          <p class="text-ink/70 leading-relaxed mt-3 text-sm sm:text-base">Geen overbelichte ramen of donkere hoeken. Met high-bracket multi-exposure HDR en kleurechte nabewerking tonen we het huis op z'n allerbest.</p>
-        </div>
-        <ul class="mt-6 pt-6 border-t border-ink/10 space-y-2 text-xs font-bold text-ink/80">
-          <li class="flex items-center gap-2"><span class="text-bronze">✓</span>Tilt-shift architectuurlenzen</li>
-          <li class="flex items-center gap-2"><span class="text-bronze">✓</span>Kaarsrechte zichtlijnen</li>
-          <li class="flex items-center gap-2"><span class="text-bronze">✓</span>Subtiele styling ter plaatse</li>
-        </ul>
-      </div>
-      <div class="bg-coal text-cream p-8 sm:p-10 rounded-3xl border border-white/10 hover:border-bronze-light transition-all duration-300 flex flex-col justify-between group shadow-xl">
-        <div>
-          <div class="w-12 h-12 rounded-2xl bg-bronze text-white grid place-items-center">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/></svg>
-          </div>
-          <h3 class="text-2xl font-extrabold tracking-tight mt-6">2. Vloeiende Walkthroughs</h3>
-          <p class="text-cream/70 leading-relaxed mt-3 text-sm sm:text-base">Onze unieke signatuur. We wekken haarscherpe foto's tot leven in een filmische camerabeweging met kalme, rustgevende overgangen.</p>
-        </div>
-        <ul class="mt-6 pt-6 border-t border-white/10 space-y-2 text-xs font-bold text-cream/80">
-          <li class="flex items-center gap-2"><span class="text-bronze-light">✓</span>16:9 Landscape voor Funda &amp; TV</li>
-          <li class="flex items-center gap-2"><span class="text-bronze-light">✓</span>9:16 Vertical voor Reels &amp; TikTok</li>
-          <li class="flex items-center gap-2"><span class="text-bronze-light">✓</span>Inclusief kalme sfeermuziek</li>
-        </ul>
-      </div>
-      <div class="bg-sand p-8 sm:p-10 rounded-3xl border border-ink/5 hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between group">
-        <div>
-          <div class="w-12 h-12 rounded-2xl bg-ink text-cream grid place-items-center group-hover:bg-bronze transition-colors duration-300">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
-          </div>
-          <h3 class="text-2xl font-extrabold tracking-tight mt-6">3. Direct Meetbare Leads</h3>
-          <p class="text-ink/70 leading-relaxed mt-3 text-sm sm:text-base">Woningen met video blijven 3× langer bekeken op Funda en trekken kwalitatieve bieders. Airbnb accommodaties noteren gemiddeld 24% hogere conversie.</p>
-        </div>
-        <ul class="mt-6 pt-6 border-t border-ink/10 space-y-2 text-xs font-bold text-ink/80">
-          <li class="flex items-center gap-2"><span class="text-bronze">✓</span>Verkooptijd gemiddeld -37%</li>
-          <li class="flex items-center gap-2"><span class="text-bronze">✓</span>Meer serieuze bezichtigingen</li>
-          <li class="flex items-center gap-2"><span class="text-bronze">✓</span>Binnen 72u direct online</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SHOWCASE -->
-<section id="showcase" class="py-20 lg:py-28 bg-sand border-t border-ink/5 hero-glow-sand">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-      <div>
-        <span class="kicker">Uitgelichte Producties</span>
-        <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight">Recente <span class="font-serif-italic font-normal text-bronze">Walkthroughs</span></h2>
-        <p class="text-ink/70 mt-3 text-sm sm:text-base max-w-lg">Klik op een project voor de volledige foto- en videopresentatie met achtergrond en resultaten.</p>
-      </div>
-      <button onclick="navigateTo('portfolio')" class="btn btn-ghost text-xs uppercase tracking-wider font-extrabold shrink-0">
-        <span>Bekijk alle projecten</span>
-        <svg class="arr w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </button>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12" id="homeShowcaseGrid"></div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="py-20 lg:py-28">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="text-center max-w-2xl mx-auto">
-      <span class="kicker kicker-center">Klantervaringen</span>
-      <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight">Wat makelaars en hosts <span class="font-serif-italic font-normal text-bronze">over ons zeggen</span></h2>
-    </div>
-    <div class="grid md:grid-cols-3 gap-8 mt-14">
-      <div class="bg-sand p-8 rounded-3xl border border-ink/5 shadow-sm flex flex-col justify-between">
-        <div>
-          <div class="flex text-amber-500 text-sm">★★★★★</div>
-          <p class="mt-4 text-ink/80 text-sm sm:text-base leading-relaxed italic">"De walkthrough zorgde ervoor dat potentiële kopers al verliefd waren vóór de bezichtiging. Binnen 10 dagen verkocht met meerdere biedingen boven vraagprijs."</p>
-        </div>
-        <div class="mt-6 pt-6 border-t border-ink/10 flex items-center gap-3.5">
-          <div class="w-10 h-10 rounded-full bg-bronze/20 text-bronze-dark font-extrabold grid place-items-center text-xs">SB</div>
-          <div>
-            <p class="text-sm font-extrabold">Sanne de Boer</p>
-            <p class="text-xs text-ink/55">NVM Makelaar Breda</p>
-          </div>
-        </div>
-      </div>
-      <div class="bg-sand p-8 rounded-3xl border border-ink/5 shadow-sm flex flex-col justify-between">
-        <div>
-          <div class="flex text-amber-500 text-sm">★★★★★</div>
-          <p class="mt-4 text-ink/80 text-sm sm:text-base leading-relaxed italic">"Dankzij de nieuwe foto's en video walkthrough ging onze Airbnb bezetting van 68% naar 94%. We konden onze nachtprijs met €22 verhogen. Binnen twee weken terugverdiend!"</p>
-        </div>
-        <div class="mt-6 pt-6 border-t border-ink/10 flex items-center gap-3.5">
-          <div class="w-10 h-10 rounded-full bg-bronze/20 text-bronze-dark font-extrabold grid place-items-center text-xs">MJ</div>
-          <div>
-            <p class="text-sm font-extrabold">Mark Jansen</p>
-            <p class="text-xs text-ink/55">Superhost 3 Vakantievilla's</p>
-          </div>
-        </div>
-      </div>
-      <div class="bg-sand p-8 rounded-3xl border border-ink/5 shadow-sm flex flex-col justify-between">
-        <div>
-          <div class="flex text-amber-500 text-sm">★★★★★</div>
-          <p class="mt-4 text-ink/80 text-sm sm:text-base leading-relaxed italic">"Fijn dat je altijd met dezelfde twee mensen schakelt. Kasper &amp; Gio denken mee over meubelopstelling en lichtinval, zijn punctueel en leveren binnen 72 uur zonder gedoe op."</p>
-        </div>
-        <div class="mt-6 pt-6 border-t border-ink/10 flex items-center gap-3.5">
-          <div class="w-10 h-10 rounded-full bg-bronze/20 text-bronze-dark font-extrabold grid place-items-center text-xs">FA</div>
-          <div>
-            <p class="text-sm font-extrabold">Fatima El Amrani</p>
-            <p class="text-xs text-ink/55">Vastgoedontwikkelaar Breda</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="py-20 lg:py-28 bg-sand border-t border-ink/5">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="max-w-3xl mx-auto">
-      <div class="text-center">
-        <span class="kicker kicker-center">Veelgestelde Vragen</span>
-        <h2 class="mt-3 text-3xl font-extrabold tracking-tight">Alles wat je wilt weten over de werkwijze</h2>
-      </div>
-      <div class="mt-10 space-y-3.5" id="faqAccordion">
-        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
-            <span>Hoe snel ontvangen wij de definitieve beelden?</span>
-            <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4">+</span>
-          </button>
-          <div class="faq-answer"><p class="pt-4 text-ink/75 text-sm leading-relaxed">De foto's en video walkthroughs leveren we standaard <strong>binnen 72 uur</strong> na de shoot digitaal in hoge én Funda-geoptimaliseerde resolutie.</p></div>
-        </div>
-        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
-            <span>Zijn de video walkthroughs direct geschikt voor Funda?</span>
-            <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4">+</span>
-          </button>
-          <div class="faq-answer"><p class="pt-4 text-ink/75 text-sm leading-relaxed">Jazeker! We exporteren conform de exacte specificaties van Funda, Pararius en YouTube (16:9 Full HD/4K MP4 zonder watermerken). Bij pakket 3 ontvang je ook alle social formaten.</p></div>
-        </div>
-        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
-            <span>Kan ik ook alleen een video laten maken?</span>
-            <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4">+</span>
-          </button>
-          <div class="faq-answer"><p class="pt-4 text-ink/75 text-sm leading-relaxed">Ja, dat kan — maar alléén als je zelf je eigen HDR/RAW foto's van voldoende kwaliteit aanlevert. Wij maken daar de cinematische walkthrough van, dit kost €295.</p></div>
-        </div>
-        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
-            <span>Hoe moeten we de woning voorbereiden op de shoot?</span>
-            <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4">+</span>
-          </button>
-          <div class="faq-answer"><p class="pt-4 text-ink/75 text-sm leading-relaxed">Na je reservering sturen we direct onze praktische '10-Punten Voorbereidingsgids'. Tijdens de opname helpt Kasper bovendien met styling en het weghalen van afleidende voorwerpen.</p></div>
-        </div>
-        <div class="faq-item rounded-2xl bg-cream p-6 border border-ink/10">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left font-extrabold text-base sm:text-lg">
-            <span>Werken jullie alleen in Breda?</span>
-            <span class="faq-icon w-8 h-8 rounded-full border border-ink/20 grid place-items-center text-sm transition-all shrink-0 ml-4">+</span>
-          </button>
-          <div class="faq-answer"><p class="pt-4 text-ink/75 text-sm leading-relaxed">Onze uitvalsbasis is <strong>Breda</strong>. Binnen Zuid-Nederland en de Randstad rekenen we geen reiskosten. Daarbuiten hanteren we een helder kilometertarief van €0,35 per km.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-20 lg:py-28 bg-coal text-cream relative overflow-hidden">
-  <div class="absolute inset-0 opacity-30" style="background:radial-gradient(850px 500px at 92% 10%, rgba(169,137,91,.14), transparent 70%), radial-gradient(650px 500px at 4% 92%, rgba(169,137,91,.10), transparent 65%)"></div>
-  <div class="mx-auto max-w-7xl px-5 sm:px-8 relative z-10">
-    <div class="text-center max-w-3xl mx-auto">
-      <span class="kicker kicker-center text-bronze-light">Klaar om te beginnen?</span>
-      <h2 class="mt-4 text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">Laat je vastgoed er direct <span class="font-serif-italic font-normal text-bronze-light">bovenuit steken</span></h2>
-      <p class="mt-5 text-cream/75 text-base sm:text-lg leading-relaxed max-w-xl mx-auto">Binnen 72 uur geleverd. Persoonlijk contact met Kasper &amp; Gio. Vrijblijvende offerte binnen 2 uur in je mailbox.</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <button onclick="navigateTo('contact')" class="btn btn-bronze">
-          <span>Direct Offerte Aanvragen</span>
-          <svg class="arr w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </button>
-        <a href="https://wa.me/31762408890" target="_blank" class="btn btn-ghost-light">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
-          <span>WhatsApp Ons</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-
-<!-- ================= VIEW PORTFOLIO ================= -->
-<div id="view-portfolio" class="page-view">
-<section class="py-12 sm:py-20 hero-glow">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="max-w-3xl">
-      <span class="kicker">Portfolio &amp; Recente Producties</span>
-      <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold tracking-tight">Laat beelden voor je <span class="font-serif-italic font-normal text-bronze">werken</span></h1>
-      <p class="mt-5 text-base sm:text-lg text-ink/75 leading-relaxed">Van eeuwenoude grachtenpanden tot strakke nieuwbouwvilla's en drukgeboekte boutique verblijven. Klik op een project voor een volledige subpagina met foto's, video en resultaten.</p>
-    </div>
-    <div class="mt-10 flex flex-wrap gap-2.5 pb-4 border-b border-ink/10" id="portfolioFilter">
-      <button onclick="filterPortfolio('all')" class="port-filter-btn px-5 py-2.5 rounded-full text-xs font-extrabold tracking-wider bg-ink text-cream transition-colors" data-filter="all">ALLES TONEN</button>
-      <button onclick="filterPortfolio('grachtenpand')" class="port-filter-btn px-5 py-2.5 rounded-full text-xs font-extrabold tracking-wider bg-sand text-ink hover:bg-ink hover:text-cream transition-colors" data-filter="grachtenpand">GRACHTENPANDEN</button>
-      <button onclick="filterPortfolio('villa')" class="port-filter-btn px-5 py-2.5 rounded-full text-xs font-extrabold tracking-wider bg-sand text-ink hover:bg-ink hover:text-cream transition-colors" data-filter="villa">VILLA'S &amp; LANDHUIZEN</button>
-      <button onclick="filterPortfolio('airbnb')" class="port-filter-btn px-5 py-2.5 rounded-full text-xs font-extrabold tracking-wider bg-sand text-ink hover:bg-ink hover:text-cream transition-colors" data-filter="airbnb">AIRBNB &amp; HOSPITALITY</button>
-      <button onclick="filterPortfolio('penthouse')" class="port-filter-btn px-5 py-2.5 rounded-full text-xs font-extrabold tracking-wider bg-sand text-ink hover:bg-ink hover:text-cream transition-colors" data-filter="penthouse">PENTHOUSES &amp; LOFTS</button>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8" id="portfolioCards"></div>
-    <div class="mt-16 bg-sand p-8 sm:p-12 rounded-3xl border border-ink/10 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div>
-        <span class="text-xs font-extrabold text-bronze uppercase tracking-widest">Maatwerk Shoot Nodig?</span>
-        <h3 class="text-2xl sm:text-3xl font-extrabold mt-1">Jouw vastgoed ook in deze signatuur presenteren?</h3>
-        <p class="text-ink/70 text-sm mt-2 max-w-xl">We plannen flexibel binnen 3 tot 5 werkdagen een shoot in en leveren 72 uur later alle beelden op.</p>
-      </div>
-      <button onclick="navigateTo('contact')" class="btn btn-dark shrink-0">Direct Datum Prikken</button>
-    </div>
-  </div>
-</section>
-</div>
-
-<!-- ================= VIEW PROJECT DETAIL ================= -->
-<div id="view-project" class="page-view">
-<section class="py-10 sm:py-16 hero-glow">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <button onclick="navigateTo('portfolio')" class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-bronze hover:text-bronze-dark transition-colors mb-6">
-      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
-      Terug naar Portfolio
-    </button>
-    <div class="flex flex-wrap items-center gap-2 mb-4" id="projectChips"></div>
-    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
-      <h1 id="projectTitle" class="text-3xl sm:text-5xl font-extrabold tracking-tight max-w-2xl"></h1>
-      <p id="projectResult" class="text-sm sm:text-base font-bold text-bronze-dark"></p>
-    </div>
-    <div class="relative mt-8 rounded-3xl overflow-hidden shadow-2xl bg-coal aspect-[16/9] border border-ink/10 group cursor-pointer" id="projectHeroWrap">
-      <img id="projectHeroImg" src="" alt="" class="absolute inset-0 w-full h-full object-cover">
-      <div class="absolute inset-0 bg-gradient-to-t from-coal/70 via-transparent to-black/10"></div>
-      <div class="absolute inset-0 grid place-items-center" onclick="openWalkthroughModal(currentProjectId)">
-        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-cream/95 text-ink grid place-items-center shadow-2xl transition-transform duration-300 group-hover:scale-110 group-hover:bg-bronze group-hover:text-white">
-          <svg class="w-7 h-7 ml-1" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-        </div>
-      </div>
-      <span class="absolute top-4 left-4 chip bg-coal/70 text-cream backdrop-blur border border-white/15 text-[11px]">Klik voor Walkthrough Preview</span>
-    </div>
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8" id="projectStats"></div>
-    <div class="grid lg:grid-cols-3 gap-10 mt-10">
-      <div class="lg:col-span-2">
-        <h2 class="text-2xl font-extrabold tracking-tight">Over dit project</h2>
-        <p id="projectDescription" class="mt-4 text-ink/75 leading-relaxed text-sm sm:text-base"></p>
-        <h3 class="text-lg font-extrabold tracking-tight mt-10">Voor &amp; Na Bewerking</h3>
-        <p class="text-ink/60 text-xs sm:text-sm mt-1">Sleep om het verschil te zien tussen de ruwe opname en de eindbewerking.</p>
-        <div class="relative mt-4 aspect-[16/10] rounded-2xl overflow-hidden border border-ink/10 shadow-md" id="projectBA">
-          <img id="projectBAafter" src="" alt="Na bewerking" class="absolute inset-0 w-full h-full object-cover">
-          <div id="projectBAbeforeWrap" class="absolute top-0 left-0 h-full overflow-hidden" style="width:50%;">
-            <img id="projectBAbefore" src="" alt="Voor bewerking" class="absolute inset-0 h-full object-cover" style="width:100vw;max-width:none;filter:saturate(.7) contrast(.9) brightness(.92);">
-          </div>
-          <span class="absolute top-3 left-3 chip bg-black/50 text-white text-[10px] border border-white/20">RAW</span>
-          <span class="absolute top-3 right-3 chip bg-black/50 text-white text-[10px] border border-white/20">BEWERKT</span>
-          <div id="projectBAhandle" class="p2v-handle" style="left:50%;"><div class="p2v-circle"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div></div>
-        </div>
-        <h3 class="text-lg font-extrabold tracking-tight mt-12">Fotogalerij</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-5" id="projectGallery"></div>
-        <h3 class="text-lg font-extrabold tracking-tight mt-12">Video Walkthrough — Alle Formaten</h3>
-        <div class="flex flex-wrap gap-2.5 mt-4" id="formatTabs">
-          <button class="tab-btn active" data-format="landscape" onclick="setFormat('landscape',this)">16:9 Funda / TV</button>
-          <button class="tab-btn" data-format="vertical" onclick="setFormat('vertical',this)">9:16 Reels / TikTok</button>
-          <button class="tab-btn" data-format="square" onclick="setFormat('square',this)">1:1 Social</button>
-        </div>
-        <div class="relative mt-5 bg-black rounded-2xl overflow-hidden border border-ink/10 select-none mx-auto transition-all duration-500" id="detailPlayerWrap" style="aspect-ratio:16/9;max-width:100%;">
-          <div id="detailScenes" class="absolute inset-0"></div>
-          <div class="absolute inset-0 vignette pointer-events-none"></div>
-          <div class="absolute top-4 left-4 flex items-center gap-2 bg-coal/70 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full text-cream text-[10px] font-extrabold uppercase tracking-widest">
-            <span class="w-2 h-2 rounded-full bg-red-500 rec-blink"></span>
-            <span>4K CINEMATIC</span>
-          </div>
-          <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-coal via-coal/60 to-transparent">
-            <div class="flex items-center gap-3 text-cream">
-              <button onclick="toggleDetailPlay()" id="detailPlayBtn" class="w-10 h-10 rounded-full bg-cream text-ink grid place-items-center hover:bg-bronze hover:text-white transition-colors shrink-0" aria-label="Afspelen">
-                <svg id="detailPlayIcon" class="w-4 h-4 ml-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg>
-              </button>
-              <div class="flex-1 h-1 bg-white/20 rounded-full overflow-hidden">
-                <div id="detailProgress" class="h-full bg-bronze-light rounded-full transition-all duration-100" style="width:0%"></div>
-              </div>
-              <span id="detailTime" class="text-xs font-bold tabular-nums shrink-0">0:00 / 0:24</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="lg:col-span-1">
-        <div class="bg-sand rounded-3xl p-7 border border-ink/10 sticky top-24">
-          <h4 class="text-xs font-extrabold uppercase tracking-widest text-bronze">Projectgegevens</h4>
-          <dl class="mt-5 space-y-4 text-sm" id="projectFacts"></dl>
-          <div class="mt-7 pt-6 border-t border-ink/15">
-            <p class="text-sm font-bold text-ink/80" id="projectQuoteText"></p>
-            <p class="text-xs text-ink/50 mt-2" id="projectQuoteAuthor"></p>
-          </div>
-          <button onclick="navigateTo('contact')" class="btn btn-dark w-full mt-7">Vergelijkbare Shoot Aanvragen</button>
-        </div>
-      </div>
-    </div>
-    <div class="mt-16">
-      <h3 class="text-xl font-extrabold tracking-tight mb-6">Andere projecten</h3>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projectRelated"></div>
-    </div>
-  </div>
-</section>
-</div>
-
-<!-- ================= VIEW OVER ONS ================= -->
-<div id="view-overons" class="page-view">
-<section class="py-12 sm:py-20 hero-glow">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="max-w-3xl">
-      <span class="kicker">Het Team Achter Studio Kader</span>
-      <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold tracking-tight">Twee specialisten. <span class="font-serif-italic font-normal text-bronze">Eén visie</span> op interieurbeeld.</h1>
-      <p class="mt-5 text-base sm:text-lg text-ink/75 leading-relaxed">Wij zijn geen anoniem bureau. Studio Kader bestaat uit <strong class="text-ink">twee gedreven professionals</strong>: Kasper en Gio. Zo garanderen we altijd dezelfde onberispelijke kwaliteit — vanuit onze thuisbasis Breda.</p>
-    </div>
-    <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mt-14">
-      <div class="bg-sand rounded-3xl overflow-hidden border border-ink/10 flex flex-col group">
-        <div class="relative aspect-[4/3] overflow-hidden bg-coal">
-          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=900&auto=format&fit=crop" alt="Kasper Jansen - Co-Founder & Fotograaf" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" style="object-position: center 25%;">
-          <div class="absolute inset-0 bg-gradient-to-t from-coal/85 via-coal/10 to-transparent"></div>
-          <span class="absolute bottom-4 left-5 chip bg-bronze text-white text-[11px] uppercase tracking-wider font-extrabold">CO-FOUNDER &amp; FOTOGRAAF</span>
-        </div>
-        <div class="p-8 sm:p-10 flex-1">
-          <h3 class="text-2xl font-extrabold tracking-tight">Kasper Jansen</h3>
-          <p class="text-xs font-extrabold text-bronze uppercase tracking-widest mt-1.5">LEAD INTERIEURFOTOGRAFIE &amp; AI SPECIALIST</p>
-          <p class="mt-4 text-ink/70 leading-relaxed text-sm sm:text-[15px]">Met een achtergrond in grafisch vormgeving en fotografie weet Kasper instinctief hoe daglicht door een vertrek stroomt. Hij spot direct hoe een eettafel net 5 centimeter moet draaien voor de perfecte zichtlijn.</p>
-          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-ink/60"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Beschikbaar in Breda &amp; Zuid-Nederland</div>
-        </div>
-      </div>
-      <div class="bg-sand rounded-3xl overflow-hidden border border-ink/10 flex flex-col group">
-        <div class="relative aspect-[4/3] overflow-hidden bg-coal">
-          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=900&auto=format&fit=crop" alt="Giovanni Peterse - Co-Founder & Motion Lead" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" style="object-position:center 20%;">
-          <div class="absolute inset-0 bg-gradient-to-t from-coal/85 via-coal/10 to-transparent"></div>
-          <span class="absolute bottom-4 left-5 chip bg-ink text-cream border border-white/15 text-[11px] uppercase tracking-wider font-extrabold">CO-FOUNDER &amp; MOTION LEAD</span>
-        </div>
-        <div class="p-8 sm:p-10 flex-1">
-          <h3 class="text-2xl font-extrabold tracking-tight">Giovanni Peterse</h3>
-          <p class="text-xs font-extrabold text-bronze uppercase tracking-widest mt-1.5">STORYBOARDING &amp; VIDEO WALKTHROUGHS</p>
-          <p class="mt-4 text-ink/70 leading-relaxed text-sm sm:text-[15px]">Gio vertaalt de stilstaande hoogwaardige foto's naar onze kenmerkende, vloeiende walkthroughs. Met speciale camera-interpolatie curves, doordachte soundscapes en natuurlijke kleurbalans.</p>
-          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-ink/60"><span class="w-2 h-2 rounded-full bg-bronze"></span> Motion &amp; Color Grading Specialist</div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-20 bg-coal text-cream rounded-3xl p-8 sm:p-12 border border-white/10">
-      <div class="max-w-2xl">
-        <span class="text-xs font-extrabold text-bronze-light uppercase tracking-widest">Onze Gereedschapskist</span>
-        <h3 class="text-2xl sm:text-4xl font-extrabold mt-2 leading-tight">Compromisloze apparatuur voor maximale scherpte</h3>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-        <div class="p-5 rounded-2xl bg-white/5 border border-white/10"><span class="text-bronze text-lg font-extrabold">61 Megapixel</span><p class="text-sm font-bold text-cream mt-1">Sony Full-Frame R-Serie</p><p class="text-xs text-cream/60 mt-1">Haarscherpe doortekening tot in de kleinste details.</p></div>
-        <div class="p-5 rounded-2xl bg-white/5 border border-white/10"><span class="text-bronze text-lg font-extrabold">Geen Vervorming</span><p class="text-sm font-bold text-cream mt-1">Canon TS-E Tilt-Shift</p><p class="text-xs text-cream/60 mt-1">Kaarsrechte kozijnen en muren zonder fish-eye bolling.</p></div>
-        <div class="p-5 rounded-2xl bg-white/5 border border-white/10"><span class="text-bronze text-lg font-extrabold">Natuurlijk Licht</span><p class="text-sm font-bold text-cream mt-1">Profoto B10X Indirect</p><p class="text-xs text-cream/60 mt-1">Zachte invulflitsen die omgevingslicht imiteren.</p></div>
-        <div class="p-5 rounded-2xl bg-white/5 border border-white/10"><span class="text-bronze text-lg font-extrabold">4K Mastering</span><p class="text-sm font-bold text-cream mt-1">DaVinci Resolve Studio</p><p class="text-xs text-cream/60 mt-1">Bioscoopwaardige kleurcorrectie per platform.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-
-<!-- ================= VIEW DIENSTEN ================= -->
-<div id="view-diensten" class="page-view">
-<section class="py-12 sm:py-20 hero-glow">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="max-w-3xl">
-      <span class="kicker">Onze Werkwijze &amp; Toepassing</span>
-      <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold tracking-tight">Van shoot tot publicatie in <span class="font-serif-italic font-normal text-bronze">vier soepele stappen</span></h1>
-      <p class="mt-5 text-base sm:text-lg text-ink/75 leading-relaxed">Geen gedoe met ingewikkelde filmploegen of wekenlang wachten. Wij ontzorgen de makelaar of huiseigenaar van A tot Z — standaard binnen 72 uur.</p>
-    </div>
-    <div class="grid md:grid-cols-4 gap-6 mt-14">
-      <div class="bg-sand p-7 rounded-3xl border border-ink/10 flex flex-col justify-between">
-        <div>
-          <div class="w-10 h-10 rounded-full bg-bronze text-white font-extrabold text-base grid place-items-center mb-5">1</div>
-          <h3 class="text-lg font-extrabold">Afstemming &amp; Stylinggids</h3>
-          <p class="text-ink/70 text-xs sm:text-sm mt-3 leading-relaxed">We prikken een datum en sturen onze checklist. Zo staat de woning er pico bello bij voor de shoot.</p>
-        </div>
-        <p class="text-xs font-bold text-bronze-dark mt-6">✓ Voorbereiding vooraf</p>
-      </div>
-      <div class="bg-sand p-7 rounded-3xl border border-ink/10 flex flex-col justify-between">
-        <div>
-          <div class="w-10 h-10 rounded-full bg-bronze text-white font-extrabold text-base grid place-items-center mb-5">2</div>
-          <h3 class="text-lg font-extrabold">Shoot op Locatie</h3>
-          <p class="text-ink/70 text-xs sm:text-sm mt-3 leading-relaxed">Kasper en Gio komen samen vanuit Breda. Binnen 60 tot 90 minuten fotograferen we alle vertrekken.</p>
-        </div>
-        <p class="text-xs font-bold text-bronze-dark mt-6">⏱ 60 tot 90 minuten</p>
-      </div>
-      <div class="bg-sand p-7 rounded-3xl border border-ink/10 flex flex-col justify-between">
-        <div>
-          <div class="w-10 h-10 rounded-full bg-bronze text-white font-extrabold text-base grid place-items-center mb-5">3</div>
-          <h3 class="text-lg font-extrabold">Retouche &amp; Walkthrough</h3>
-          <p class="text-ink/70 text-xs sm:text-sm mt-3 leading-relaxed">Kasper corrigeert kleuren. Gio bouwt de rustige, elegante video walkthrough met muziek.</p>
-        </div>
-        <p class="text-xs font-bold text-bronze-dark mt-6">✨ Geen kwaliteitsverlies</p>
-      </div>
-      <div class="bg-sand p-7 rounded-3xl border border-ink/10 flex flex-col justify-between">
-        <div>
-          <div class="w-10 h-10 rounded-full bg-bronze text-white font-extrabold text-base grid place-items-center mb-5">4</div>
-          <h3 class="text-lg font-extrabold">Oplevering binnen 72 Uur</h3>
-          <p class="text-ink/70 text-xs sm:text-sm mt-3 leading-relaxed">Je ontvangt een overzichtelijke downloadlink met mappen voor Funda, Instagram Reels en drukwerk.</p>
-        </div>
-        <p class="text-xs font-bold text-bronze-dark mt-6">🚀 Direct live te zetten</p>
-      </div>
-    </div>
-    <div class="mt-20">
-      <span class="kicker">Voor Wie Wij Werken</span>
-      <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight">Oplossingen op maat per doelgroep</h2>
-      <div class="grid md:grid-cols-3 gap-8 mt-10">
-        <div class="bg-coal text-cream p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-extrabold text-bronze-light uppercase tracking-wider">Makelaars &amp; Particulieren</span>
-            <h4 class="text-xl font-extrabold mt-2">Maximale Opbrengst op Funda</h4>
-            <p class="text-cream/70 text-sm mt-3 leading-relaxed">Kopers krijgen vooraf al een exact gevoel voor de routing en sfeer. Resultaat: meer bezichtigingen van echt geïnteresseerde kopers.</p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-white/10 text-xs font-bold text-cream/80">Gem. 3 weken sneller verkocht</div>
-        </div>
-        <div class="bg-coal text-cream p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-extrabold text-bronze-light uppercase tracking-wider">Airbnb &amp; Vakantiewoningen</span>
-            <h4 class="text-xl font-extrabold mt-2">Hogere Nachtprijs &amp; Bezetting</h4>
-            <p class="text-cream/70 text-sm mt-3 leading-relaxed">Gasten twijfelen vaak over de werkelijke afmetingen en sfeer. Een rustige videorondleiding wekt direct vertrouwen.</p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-white/10 text-xs font-bold text-cream/80">Gem. +24% hogere conversie</div>
-        </div>
-        <div class="bg-coal text-cream p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-extrabold text-bronze-light uppercase tracking-wider">Architecten &amp; Ontwikkelaars</span>
-            <h4 class="text-xl font-extrabold mt-2">Portfolio Presentatie</h4>
-            <p class="text-cream/70 text-sm mt-3 leading-relaxed">Laat je architectonische visie tot leven komen met gedetailleerde beelden die de essentie van elk ontwerp vastleggen.</p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-white/10 text-xs font-bold text-cream/80">Professioneel portfolio</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-
-<!-- ================= VIEW TARIEVEN ================= -->
-<div id="view-tarieven" class="page-view">
-<section class="py-12 sm:py-20 hero-glow">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="text-center max-w-2xl mx-auto">
-      <span class="kicker kicker-center">Pakketten &amp; Tarieven</span>
-      <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold tracking-tight">Transparante <span class="font-serif-italic font-normal text-bronze">prijzen</span></h1>
-      <p class="mt-5 text-base sm:text-lg text-ink/75 leading-relaxed">Eerlijke tarieven zonder verrassingen. Elk pakket inclusief persoonlijke begeleiding door Kasper &amp; Gio. Oplevering standaard binnen 72 uur.</p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-6 lg:gap-8 mt-14 max-w-6xl mx-auto">
-      <div class="bg-cream p-8 rounded-3xl border border-ink/10 flex flex-col">
-        <span class="text-xs font-extrabold text-bronze uppercase tracking-widest">Pakket 1</span>
-        <h3 class="text-[22px] font-extrabold mt-2 leading-tight">Foto's maken en bewerken</h3>
-        <div class="mt-4"><span class="text-4xl font-extrabold">€ 295</span><span class="text-ink/50 text-sm ml-1">excl. BTW</span></div>
-        <p class="text-ink/60 text-sm mt-3">Perfect voor kleine appartementen of studio's op Funda.</p>
-        <ul class="mt-6 space-y-2.5 text-sm text-ink/80 flex-1">
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>25–35 HDR foto's, Funda-ready</li>
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>Professionele nabewerking</li>
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>Binnen 72u opgeleverd</li>
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>Hoge &amp; lage resolutie</li>
-        </ul>
-        <button onclick="navigateTo('contact')" class="btn btn-ghost w-full mt-8 text-center">Offerte Aanvragen</button>
-      </div>
-      <div class="bg-coal text-cream p-8 rounded-3xl border border-bronze/40 flex flex-col shadow-xl relative overflow-hidden">
-        <span class="absolute top-0 right-0 bg-bronze text-white text-[10px] font-extrabold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider">Meest Gevraagd</span>
-        <span class="text-xs font-extrabold text-bronze-light uppercase tracking-widest">Pakket 2</span>
-        <h3 class="text-[22px] font-extrabold mt-2 leading-tight">Foto's maken, bewerken en video van 1 minuut</h3>
-        <div class="mt-4"><span class="text-4xl font-extrabold">€ 495</span><span class="text-cream/50 text-sm ml-1">excl. BTW</span></div>
-        <p class="text-cream/60 text-sm mt-3">Ons populairste pakket: foto's + cinematische walkthrough (1 min, 16:9).</p>
-        <ul class="mt-6 space-y-2.5 text-sm text-cream/80 flex-1">
-          <li class="flex items-center gap-2"><span class="text-bronze-light font-bold">✓</span>35–50 HDR foto's</li>
-          <li class="flex items-center gap-2"><span class="text-bronze-light font-bold">✓</span>Cinematische walkthrough (1 minuut, 16:9)</li>
-          <li class="flex items-center gap-2"><span class="text-bronze-light font-bold">✓</span>Sfeermuziek licentie inbegrepen</li>
-          <li class="flex items-center gap-2"><span class="text-bronze-light font-bold">✓</span>Binnen 72u opgeleverd</li>
-          <li class="flex items-center gap-2"><span class="text-bronze-light font-bold">✓</span>Hoge &amp; lage resolutie</li>
-        </ul>
-        <button onclick="navigateTo('contact')" class="btn btn-bronze w-full mt-8 text-center">Offerte Aanvragen</button>
-      </div>
-      <div class="bg-cream p-8 rounded-3xl border border-ink/10 flex flex-col">
-        <span class="text-xs font-extrabold text-bronze uppercase tracking-widest">Pakket 3</span>
-        <h3 class="text-[22px] font-extrabold mt-2 leading-tight">Alles van pakket 2 + video's op alle formaten (dus ook voor social media)</h3>
-        <div class="mt-4"><span class="text-4xl font-extrabold">€ 795</span><span class="text-ink/50 text-sm ml-1">excl. BTW</span></div>
-        <p class="text-ink/60 text-sm mt-3">Voor exclusieve woningen. Inclusief video's voor elk platform &amp; social media.</p>
-        <ul class="mt-6 space-y-2.5 text-sm text-ink/80 flex-1">
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>50–70 HDR foto's</li>
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>Alles van pakket 2</li>
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>16:9 Landscape (Funda &amp; TV)</li>
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>9:16 Vertical (Reels &amp; TikTok)</li>
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>1:1 Square &amp; 4:5 Portrait (social media)</li>
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>Exclusieve sfeermuziek</li>
-          <li class="flex items-center gap-2"><span class="text-bronze font-bold">✓</span>24-uurs spoedlevering mogelijk</li>
-        </ul>
-        <button onclick="navigateTo('contact')" class="btn btn-ghost w-full mt-8 text-center">Offerte Aanvragen</button>
-      </div>
-    </div>
-    <div class="mt-6 max-w-6xl mx-auto bg-sand rounded-3xl p-6 sm:p-7 border border-bronze/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-      <div class="flex-1">
-        <span class="text-xs font-extrabold text-bronze uppercase tracking-widest">Alleen mogelijk bij eigen aangeleverde foto's</span>
-        <h4 class="text-lg sm:text-xl font-extrabold mt-1">Alleen Video Walkthrough</h4>
-        <p class="text-sm text-ink/60 mt-1 max-w-xl">Dit pakket is uitsluitend mogelijk wanneer je zélf je HDR / RAW foto's van voldoende kwaliteit aanlevert. Wij maken hier vervolgens de cinematische walkthrough van, inclusief grading &amp; muziek.</p>
-      </div>
-      <div class="shrink-0 flex flex-row sm:flex-col items-center sm:items-end gap-4 sm:gap-1 w-full sm:w-auto justify-between">
-        <div class="text-left sm:text-right">
-          <p class="text-2xl font-extrabold">€ 295 <span class="text-sm font-medium text-ink/50">excl. BTW</span></p>
-          <p class="text-xs text-ink/50">per woning / 1 minuut</p>
-        </div>
-        <button onclick="navigateTo('contact')" class="btn btn-dark !py-2.5 !px-6 text-xs shrink-0">Aanvragen</button>
-      </div>
-    </div>
-    <div class="mt-12 max-w-6xl mx-auto bg-cream rounded-3xl p-8 border border-ink/10 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div>
-        <span class="text-xs font-extrabold text-bronze uppercase tracking-widest">Maatwerk</span>
-        <h3 class="text-xl sm:text-2xl font-extrabold mt-1">Groter object of meerdere adressen?</h3>
-        <p class="text-ink/70 text-sm mt-2 max-w-xl">Voor portieken, bedrijfsruimtes of vastgoedportefeuilles maken we graag een offerte op maat. Volumekorting mogelijk.</p>
-      </div>
-      <button onclick="navigateTo('contact')" class="btn btn-dark shrink-0">Custom Offerte</button>
-    </div>
-  </div>
-</section>
-</div>
-
-<!-- ================= VIEW CONTACT ================= -->
-<div id="view-contact" class="page-view">
-<section class="py-12 sm:py-20 hero-glow">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-14">
-      <div>
-        <span class="kicker">Contact &amp; Offerte</span>
-        <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">Vrijblijvend <span class="font-serif-italic font-normal text-bronze">in contact</span></h1>
-        <p class="mt-5 text-base sm:text-lg text-ink/75 leading-relaxed">Vul het formulier in en ontvang binnen 2 uur een persoonlijke offerte in je mailbox. Of neem direct contact op — we denken graag mee.</p>
-        <div class="mt-10 space-y-6">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-sand flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div>
-              <h4 class="font-extrabold">E-mail</h4>
-              <p class="text-ink/60 text-sm">hallo@studiokader.nl</p>
-              <p class="text-xs text-ink/40 mt-1">Reactie binnen 2 uur op werkdagen</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-sand flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
-            </div>
-            <div>
-              <h4 class="font-extrabold">Telefoon &amp; WhatsApp</h4>
-              <p class="text-ink/60 text-sm">+31 76 240 88 90</p>
-              <p class="text-xs text-ink/40 mt-1">Ma–Za · 09:00–18:00</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-sand flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <h4 class="font-extrabold">Locatie</h4>
-              <p class="text-ink/60 text-sm">Breda, Nederland</p>
-              <p class="text-ink/40 text-xs mt-0.5">Ons bedrijf is gelegen in Breda · werkzaam in heel Zuid-Nederland &amp; de Randstad, geen reiskosten binnen de regio</p>
-            </div>
-          </div>
-        </div>
-        <div class="mt-10 p-6 rounded-2xl bg-sand border border-ink/10">
-          <p class="text-sm font-extrabold">Volgende beschikbare shoots</p>
-          <div class="mt-3 flex flex-wrap gap-2 text-xs font-bold">
-            <span class="px-3 py-1.5 rounded-full bg-cream border border-ink/10">Deze week: nog 2 plekken</span>
-            <span class="px-3 py-1.5 rounded-full bg-bronze text-white">Volgende week: beschikbaar</span>
-          </div>
-          <p class="text-xs text-ink/60 mt-3">Snel schakelen? Stuur ons een WhatsApp, dan plannen we meteen een datum.</p>
-        </div>
-      </div>
-      <div class="bg-coal text-cream rounded-3xl p-6 sm:p-10 border border-white/10 shadow-2xl">
-        <h3 class="text-2xl font-extrabold tracking-tight">Vraag een offerte aan</h3>
-        <p class="text-cream/60 text-sm mt-1">Reactie binnen 2 uur · Vrijblijvend · 72u oplevering</p>
-        <form id="contactForm" onsubmit="handleContactSubmit(event)" class="mt-6 space-y-4" novalidate>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div><label class="block text-xs font-bold uppercase tracking-wider text-cream/70 mb-1.5">Naam *</label><input type="text" required name="naam" class="field field-dark" placeholder="Jan Janssen"></div>
-            <div><label class="block text-xs font-bold uppercase tracking-wider text-cream/70 mb-1.5">Telefoon</label><input type="tel" name="telefoon" class="field field-dark" placeholder="06 1234 5678"></div>
-          </div>
-          <div><label class="block text-xs font-bold uppercase tracking-wider text-cream/70 mb-1.5">E-mail *</label><input type="email" required name="email" class="field field-dark" placeholder="jan@voorbeeld.nl"></div>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div><label class="block text-xs font-bold uppercase tracking-wider text-cream/70 mb-1.5">Type Object</label><select class="field field-dark" name="type"><option>Grachtenpand / Appartement</option><option>Villa / Landhuis</option><option>Airbnb / Vakantiewoning</option><option>Penthouse / Loft</option><option>Anders</option></select></div>
-            <div><label class="block text-xs font-bold uppercase tracking-wider text-cream/70 mb-1.5">Gewenst Pakket</label><select class="field field-dark" name="pakket"><option>Pakket 1 — Foto's maken en bewerken (€295)</option><option>Pakket 2 — Foto's maken, bewerken en video van 1 minuut (€495)</option><option>Pakket 3 — Alles van pakket 2 + video's op alle formaten (€795)</option><option>Alleen Video (eigen foto's aangeleverd) — €295</option><option>Maatwerk / Weet ik nog niet</option></select></div>
-          </div>
-          <div><label class="block text-xs font-bold uppercase tracking-wider text-cream/70 mb-1.5">Bericht</label><textarea rows="3" name="bericht" class="field field-dark" placeholder="Vertel ons over de woning, aantal m² en gewenste datum..."></textarea></div>
-          <button type="submit" class="btn btn-bronze w-full"><span>Verstuur Offerte Aanvraag</span><svg class="arr w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          <p class="text-[11px] text-cream/50 text-center">Door te versturen ga je akkoord met onze voorwaarden. Gevestigd te Breda.</p>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-
-</main>
-
-<footer class="bg-coal text-cream pt-16 pb-28 sm:pb-10 border-t border-white/10">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="grid md:grid-cols-4 gap-10">
-      <div class="md:col-span-2">
-        <div class="flex items-center gap-2.5">
-          <span class="w-9 h-9 rounded-xl bg-bronze text-coal grid place-items-center font-extrabold text-base">K</span>
-          <span class="font-extrabold tracking-tight text-lg">Studio Kader<span class="text-bronze">.</span></span>
-        </div>
-        <p class="mt-5 text-cream/65 text-sm leading-relaxed max-w-md">High-end interieurfotografie en cinematische video walkthroughs. Gevestigd in Breda, werkzaam in heel Zuid-Nederland en de Randstad. Standaard binnen 72 uur geleverd.</p>
-        <div class="mt-6 flex items-center gap-3">
-          <a href="#" class="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:bg-bronze hover:border-bronze transition-colors" aria-label="Instagram"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
-          <a href="#" class="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:bg-bronze hover:border-bronze transition-colors" aria-label="LinkedIn"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.7a1.8 1.8 0 1 1 0-3.5 1.8 1.8 0 0 1 0 3.5zM20 19h-3v-5.6c0-3.4-4-3.1-4 0V19h-3V8h3v1.8c1.4-2.6 7-2.8 7 2.5V19z"/></svg></a>
-          <a href="https://wa.me/31762408890" target="_blank" class="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:bg-bronze hover:border-bronze transition-colors" aria-label="WhatsApp"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.4C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3.1.9.9-3-.2-.3C4 14.7 3.5 13.4 3.5 12 3.5 7.3 7.3 3.5 12 3.5S20.5 7.3 20.5 12 16.7 20 12 20z"/></svg></a>
-        </div>
-      </div>
-      <div>
-        <h4 class="text-xs font-extrabold uppercase tracking-widest text-bronze-light">Sitemap</h4>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li><button onclick="navigateTo('home')" class="text-cream/70 hover:text-cream transition-colors">Home</button></li>
-          <li><button onclick="navigateTo('portfolio')" class="text-cream/70 hover:text-cream transition-colors">Portfolio</button></li>
-          <li><button onclick="navigateTo('overons')" class="text-cream/70 hover:text-cream transition-colors">Over Ons</button></li>
-          <li><button onclick="navigateTo('diensten')" class="text-cream/70 hover:text-cream transition-colors">Werkwijze</button></li>
-          <li><button onclick="navigateTo('tarieven')" class="text-cream/70 hover:text-cream transition-colors">Tarieven</button></li>
-          <li><button onclick="navigateTo('contact')" class="text-cream/70 hover:text-cream transition-colors">Contact</button></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-xs font-extrabold uppercase tracking-widest text-bronze-light">Contact</h4>
-        <ul class="mt-4 space-y-2 text-sm text-cream/70">
-          <li>hallo@studiokader.nl</li>
-          <li>+31 76 240 88 90</li>
-          <li>Breda, Nederland</li>
-        </ul>
-        <button onclick="navigateTo('contact')" class="btn btn-bronze !py-2.5 !px-4 !text-xs mt-5">Offerte Aanvragen</button>
-      </div>
-    </div>
-    <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/50">
-      <p>© <span id="year"></span> Studio Kader — Alle rechten voorbehouden.</p>
-      <p>KVK 81234567 · BTW NL862014589B01 · Gevestigd te Breda</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-/* ============ PROJECT DATA ============ */
-const PROJECTS = {
-  grachtenpand:{ title:"Keizersgracht Residence", category:"Grachtenpand", location:"Breda Centrum", size:"162 m²", duration:"72 uur", result:"Verkocht binnen 9 dagen", cover:"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop", gallery:["https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop"], description:"Dit rijksmonument aan de gracht kreeg een volledige visuele make-over. Met tilt-shift lenzen legden we de originele stucplafonds en glas-in-lood ramen kaarsrecht vast, terwijl de cinematische walkthrough bezoekers meeneemt door de statige entree naar de lichte woonkamer.", quote:"De walkthrough zorgde ervoor dat kopers al verliefd waren vóór de bezichtiging.", author:"Sanne de Boer — NVM Makelaar", stats:[{l:"Bezichtigingen",v:"+64%"},{l:"Verkooptijd",v:"9 dagen"},{l:"Biedingen boven vraagprijs",v:"3"},{l:"Video views Funda",v:"2.140"}] },
-  villa:{ title:"Villa Mastbosrand", category:"Villa / Landhuis", location:"Mastbos, Breda", size:"310 m²", duration:"72 uur", result:"Funda Topper van de Maand", cover:"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1600&auto=format&fit=crop", gallery:["https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=1200&auto=format&fit=crop"], description:"Een vrijstaande villa aan de rand van het Mastbos, gefotografeerd tijdens het gouden uur voor maximale warmte in de gevel. De walkthrough combineert exterieur framing met een rustige binnenroute langs keuken, living en tuinkamer.", quote:"Binnen twee weken meerdere serieuze biedingen boven vraagprijs.", author:"Mark Jansen — Eigenaar", stats:[{l:"Bezichtigingen",v:"+48%"},{l:"Verkooptijd",v:"14 dagen"},{l:"Doorkliks Funda",v:"+38%"},{l:"Social bereik",v:"12.500"}] },
-  airbnb:{ title:"The Forest Hideaway", category:"Airbnb / Hospitality", location:"Markdal", size:"94 m²", duration:"72 uur", result:"94% Jaarbezetting · +€28 / nacht", cover:"https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1600&auto=format&fit=crop", gallery:["https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop"], description:"Een boutique boshut die vertrouwen moest wekken bij internationale gasten. De 9:16 walkthrough versie wordt actief ingezet in Instagram Reels en heeft de directe boekingen fors verhoogd.", quote:"Onze bezetting ging van 68% naar 94% dankzij de nieuwe beelden.", author:"Mark Jansen — Superhost", stats:[{l:"Bezetting",v:"94%"},{l:"Nachtprijs",v:"+€28"},{l:"Directe boekingen",v:"+31%"},{l:"Reels views",v:"48.900"}] },
-  loft:{ title:"Oudegracht Pakhuis", category:"Penthouse / Loft", location:"Utrecht", size:"140 m²", duration:"72 uur", result:"Plafondhoogte 4.2m benadrukt", cover:"https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1600&auto=format&fit=crop", gallery:["https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop"], description:"Een voormalig pakhuis met industriële details en een indrukwekkende plafondhoogte. De walkthrough benadrukt de verticale ruimte met langzame tilt-bewegingen langs de originele balken.", quote:"Precies de sfeer die we zochten voor onze doelgroep.", author:"Vastgoedontwikkelaar Utrecht", stats:[{l:"Bezichtigingen",v:"+52%"},{l:"Verkooptijd",v:"18 dagen"},{l:"Video views",v:"3.400"},{l:"Leads via site",v:"27"}] },
-  appartement:{ title:"Wilhelminapier Toren", category:"Penthouse / Loft", location:"Rotterdam", size:"185 m²", duration:"72 uur", result:"360° Panorama uitzicht", cover:"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop", gallery:["https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop"], description:"Een skyline-penthouse met adembenemend zicht over de Maas. De walkthrough opent met een pan langs de gevelramen voordat de camera rustig door de woonruimtes beweegt.", quote:"Precies de premium uitstraling die bij het pand past.", author:"Vastgoedontwikkelaar Rotterdam", stats:[{l:"Bezichtigingen",v:"+71%"},{l:"Verkooptijd",v:"11 dagen"},{l:"Video views",v:"5.100"},{l:"Serieuze bieders",v:"6"}] },
-  nieuwbouw:{ title:"Duinvilla Kennemerland", category:"Villa / Landhuis", location:"Teteringen", size:"265 m²", duration:"72 uur", result:"Architectenprijs 2023", cover:"https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop", gallery:["https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop","https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop"], description:"Bekroonde moderne architectuur met strakke lijnen en veel glas. We fotografeerden bij zonsondergang om de warme gloed van het interieur te laten contrasteren met de blauwe avondlucht.", quote:"Een architectuurportfolio waar we trots op zijn.", author:"Architect, Teteringen", stats:[{l:"Portfolio views",v:"9.800"},{l:"Awards",v:"1"},{l:"Leads architecten",v:"14"},{l:"Social bereik",v:"22.000"}] }
-};
-const PROJECT_ORDER = Object.keys(PROJECTS);
-let currentProjectId = 'grachtenpand';
-let currentFilter = 'all';
-let lightboxIndex = 0;
-let lightboxGallery = [];
-
-function categoryFilterKey(cat){
-  if(cat.includes('Grachtenpand')) return 'grachtenpand';
-  if(cat.includes('Villa')) return 'villa';
-  if(cat.includes('Airbnb')) return 'airbnb';
-  return 'penthouse';
-}
-
-function projectCardHTML(id){
-  const p = PROJECTS[id];
-  return `<div class="port-item work-card relative rounded-3xl overflow-hidden shadow-md bg-coal aspect-[4/3] group cursor-pointer" data-category="${categoryFilterKey(p.category)}" onclick="openProject('${id}')">
-    <img src="${p.cover}" alt="${p.title}" class="work-img absolute inset-0 w-full h-full object-cover transition-transform duration-700">
-    <div class="absolute inset-0 bg-gradient-to-t from-coal/90 via-coal/20 to-transparent"></div>
-    <span class="absolute top-4 left-4 chip bg-coal/70 text-cream backdrop-blur border border-white/15">${p.location}</span>
-    <span class="absolute top-4 right-4 chip bg-bronze text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1.5" onclick="event.stopPropagation();openWalkthroughModal('${id}')">
-      <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Preview
-    </span>
-    <div class="absolute bottom-5 left-5 right-5 text-cream">
-      <p class="text-xs font-bold text-bronze-light uppercase tracking-wider">${p.category}</p>
-      <h3 class="text-xl font-extrabold tracking-tight">${p.title}</h3>
-      <p class="text-xs text-cream/70 mt-1">${p.size} · ${p.result}</p>
-    </div>
-  </div>`;
-}
-
-function renderPortfolioGrid(){
-  const grid = document.getElementById('portfolioCards');
-  if(grid){
-    grid.innerHTML = PROJECT_ORDER.map(id=>projectCardHTML(id)).join('');
-    applyFilter(currentFilter);
-  }
-  const showcase = document.getElementById('homeShowcaseGrid');
-  if(showcase) showcase.innerHTML = PROJECT_ORDER.slice(0,3).map(id=>projectCardHTML(id)).join('');
-}
-
-function applyFilter(filter){
-  currentFilter = filter;
-  document.querySelectorAll('.port-item').forEach(card=>{
-    if(filter==='all' || card.dataset.category===filter) card.style.display='';
-    else card.style.display='none';
-  });
-  document.querySelectorAll('.port-filter-btn').forEach(btn=>{
-    if(btn.dataset.filter===filter){ btn.classList.add('bg-ink','text-cream'); btn.classList.remove('bg-sand','text-ink'); }
-    else { btn.classList.remove('bg-ink','text-cream'); btn.classList.add('bg-sand','text-ink'); }
-  });
-}
-
-function filterPortfolio(filter){ applyFilter(filter); }
-
-function openProject(id){
-  if(!PROJECTS[id]) id='grachtenpand';
-  currentProjectId = id;
-  renderProject(id);
-  navigateTo('project');
-}
-
-function renderProject(id){
-  const p = PROJECTS[id];
-  document.getElementById('projectTitle').textContent = p.title;
-  document.getElementById('projectResult').textContent = '★ ' + p.result;
-  document.getElementById('projectHeroImg').src = p.cover;
-  document.getElementById('projectHeroImg').alt = p.title;
-  document.getElementById('projectChips').innerHTML = `<span class="chip bg-sand text-ink">${p.category}</span><span class="chip bg-sand text-ink">${p.location}</span><span class="chip bg-sand text-ink">${p.size}</span>`;
-  document.getElementById('projectDescription').textContent = p.description;
-  document.getElementById('projectQuoteText').textContent = `"${p.quote}"`;
-  document.getElementById('projectQuoteAuthor').textContent = p.author;
-  document.getElementById('projectBAafter').src = p.cover;
-  document.getElementById('projectBAbefore').src = p.gallery[0];
-  document.getElementById('projectStats').innerHTML = p.stats.map(s=>`<div class="bg-sand p-4 rounded-2xl border border-ink/10 text-center"><p class="text-xl font-extrabold">${s.v}</p><p class="text-xs text-ink/60 mt-1">${s.l}</p></div>`).join('');
-  document.getElementById('projectFacts').innerHTML = `<div class="flex justify-between"><span class="text-ink/60">Locatie</span><span class="font-extrabold">${p.location}</span></div><div class="flex justify-between"><span class="text-ink/60">Oppervlakte</span><span class="font-extrabold">${p.size}</span></div><div class="flex justify-between"><span class="text-ink/60">Oplevering</span><span class="font-extrabold">${p.duration}</span></div><div class="flex justify-between"><span class="text-ink/60">Resultaat</span><span class="font-extrabold">${p.result}</span></div>`;
-  document.getElementById('projectGallery').innerHTML = p.gallery.map(img=>`<div class="gallery-thumb aspect-[4/3]" onclick="openLightbox(${JSON.stringify(p.gallery).replace(/"/g, '&quot;')}, ${p.gallery.indexOf(img)})"><img src="${img}" alt="" class="w-full h-full object-cover"></div>`).join('');
-  document.getElementById('projectRelated').innerHTML = PROJECT_ORDER.filter(x=>x!==id).slice(0,3).map(x=>projectCardHTML(x)).join('');
-  // Reset before/after slider
-  const baWrap = document.getElementById('projectBAbeforeWrap');
-  if(baWrap) baWrap.style.width='50%';
-  const baHandle = document.getElementById('projectBAhandle');
-  if(baHandle) baHandle.style.left='50%';
-  // Reset format tabs
-  setFormat('landscape', document.querySelector('#formatTabs .tab-btn'));
-}
-
-/* ============ NAVIGATION ============ */
-let currentPage = 'home';
-function navigateTo(page){
-  document.querySelectorAll('.page-view').forEach(v=>v.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
-  const target = document.getElementById('view-'+page);
-  if(target) target.classList.add('active');
-  document.querySelectorAll(`.nav-btn[data-page="${page}"]`).forEach(b=>b.classList.add('active'));
-  currentPage = page;
-  window.scrollTo({top:0,behavior:'smooth'});
-  // Close mobile drawer
-  closeMobileDrawer();
-}
-
-function mobileNav(page){ navigateTo(page); }
-
-/* ============ MOBILE DRAWER ============ */
-const mobileDrawer = document.getElementById('mobileDrawer');
-const drawerPanel = document.getElementById('drawerPanel');
-function openMobileDrawer(){
-  mobileDrawer.classList.remove('pointer-events-none','opacity-0');
-  mobileDrawer.classList.add('pointer-events-auto','opacity-100');
-  drawerPanel.classList.remove('translate-x-full');
-  document.body.style.overflow='hidden';
-}
-function closeMobileDrawer(){
-  mobileDrawer.classList.add('pointer-events-none','opacity-0');
-  mobileDrawer.classList.remove('pointer-events-auto','opacity-100');
-  drawerPanel.classList.add('translate-x-full');
-  document.body.style.overflow='';
-}
-document.getElementById('mobileMenuBtn').addEventListener('click', openMobileDrawer);
-document.getElementById('drawerClose').addEventListener('click', closeMobileDrawer);
-document.getElementById('drawerBackdrop').addEventListener('click', closeMobileDrawer);
-
-/* ============ TOAST ============ */
-function showToast(msg){
-  const t=document.getElementById('toast');
-  document.getElementById('toastText').textContent=msg;
-  t.classList.remove('translate-y-28','opacity-0');
-  t.classList.add('translate-y-0','opacity-100');
-  setTimeout(()=>{ t.classList.add('translate-y-28','opacity-0'); t.classList.remove('translate-y-0','opacity-100'); },3000);
-}
-
-/* ============ CONTACT FORM ============ */
-function handleContactSubmit(e){
-  e.preventDefault();
-  const form=e.target;
-  const naam=form.naam.value.trim();
-  const email=form.email.value.trim();
-  if(!naam||!email){ showToast('Vul alstublieft alle verplichte velden in.'); return; }
-  showToast('Bedankt! We reageren binnen 2 uur.');
-  form.reset();
-}
-
-/* ============ FAQ ============ */
-function toggleFaq(btn){
-  const item=btn.closest('.faq-item');
-  const wasOpen=item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-  if(!wasOpen) item.classList.add('open');
-}
-
-/* ============ WALKTHROUGH MODAL ============ */
-let modalPlaying=false;
-let modalTimer=null;
-let modalProgress=0;
-const modalScenes=[
-  'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1600&auto=format&fit=crop'
-];
-let modalSceneIdx=0;
-function openWalkthroughModal(projectId){
-  const modal=document.getElementById('walkthroughModal');
-  modal.classList.remove('hidden');
-  document.getElementById('modalTitle').textContent = PROJECTS[projectId]?.title || 'Walkthrough Preview';
-  document.getElementById('modalScenes').innerHTML = modalScenes.map(s=>`<div class="kb-scene active" data-fx="zoom"><img src="${s}" class="w-full h-full object-cover"></div>`).join('');
-  modalSceneIdx=0; modalProgress=0; updateModalProgress();
-  toggleModalPlay();
-}
-function closeWalkthroughModal(){
-  document.getElementById('walkthroughModal').classList.add('hidden');
-  clearInterval(modalTimer); modalPlaying=false;
-}
-function toggleModalPlay(){
-  const btn=document.getElementById('modalPlayBtn');
-  const icon=document.getElementById('modalPlayIcon');
-  if(modalPlaying){
-    clearInterval(modalTimer); modalPlaying=false;
-    icon.innerHTML='<path d="M8 5v14l11-7z"/>';
-  } else {
-    modalPlaying=true;
-    icon.innerHTML='<path d="M6 4h4v16H6zm8 0h4v16h-4z"/>';
-    modalTimer=setInterval(()=>{
-      modalProgress+=0.42;
-      if(modalProgress>=100){ modalProgress=0; modalSceneIdx=(modalSceneIdx+1)%modalScenes.length; }
-      updateModalProgress();
-    },100);
-  }
-}
-function updateModalProgress(){
-  document.getElementById('modalProgress').style.width=modalProgress+'%';
-  const cur=Math.floor(modalProgress*0.24/100);
-  document.getElementById('modalTime').textContent=`0:${String(cur).padStart(2,'0')} / 0:24`;
-}
-
-/* ============ LIGHTBOX ============ */
-function openLightbox(imgs, idx){
-  lightboxGallery=imgs; lightboxIndex=idx;
-  document.getElementById('lightbox').classList.remove('hidden');
-  updateLightbox();
-}
-function closeLightbox(){ document.getElementById('lightbox').classList.add('hidden'); }
-function lightboxNav(dir){
-  lightboxIndex=(lightboxIndex+dir+lightboxGallery.length)%lightboxGallery.length;
-  updateLightbox();
-}
-function updateLightbox(){
-  document.getElementById('lightboxImg').src=lightboxGallery[lightboxIndex];
-  document.getElementById('lightboxCounter').textContent=`${lightboxIndex+1} / ${lightboxGallery.length}`;
-}
-
-/* ============ DETAIL PLAYER ============ */
-let detailPlaying=false;
-let detailTimer=null;
-let detailProgress=0;
-const detailScenes=modalScenes;
-function toggleDetailPlay(){
-  const btn=document.getElementById('detailPlayBtn');
-  const icon=document.getElementById('detailPlayIcon');
-  if(detailPlaying){
-    clearInterval(detailTimer); detailPlaying=false;
-    icon.innerHTML='<path d="M8 5v14l11-7z"/>';
-  } else {
-    detailPlaying=true;
-    icon.innerHTML='<path d="M6 4h4v16H6zm8 0h4v16h-4z"/>';
-    detailTimer=setInterval(()=>{
-      detailProgress+=0.42;
-      if(detailProgress>=100) detailProgress=0;
-      document.getElementById('detailProgress').style.width=detailProgress+'%';
-      const cur=Math.floor(detailProgress*0.24/100);
-      document.getElementById('detailTime').textContent=`0:${String(cur).padStart(2,'0')} / 0:24`;
-    },100);
-  }
-}
-
-/* ============ FORMAT TABS ============ */
-function setFormat(fmt, btn){
-  document.querySelectorAll('#formatTabs .tab-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const wrap=document.getElementById('detailPlayerWrap');
-  if(fmt==='landscape'){ wrap.style.aspectRatio='16/9'; wrap.style.maxWidth='100%'; }
-  if(fmt==='vertical'){ wrap.style.aspectRatio='9/16'; wrap.style.maxWidth='320px'; }
-  if(fmt==='square'){ wrap.style.aspectRatio='1/1'; wrap.style.maxWidth='480px'; }
-}
-
-/* ============ P2V SLIDER ============ */
-(function(){
-  const box=document.getElementById('p2vBox');
-  const handle=document.getElementById('p2vHandle');
-  const photoSide=document.getElementById('p2vPhotoSide');
-  if(!box||!handle||!photoSide) return;
-  let dragging=false;
-  function setPos(x){
-    const rect=box.getBoundingClientRect();
-    let pct=((x-rect.left)/rect.width)*100;
-    pct=Math.max(5,Math.min(95,pct));
-    handle.style.left=pct+'%';
-    photoSide.style.width=pct+'%';
-  }
-  box.addEventListener('mousedown',e=>{ dragging=true; setPos(e.clientX); });
-  window.addEventListener('mousemove',e=>{ if(dragging) setPos(e.clientX); });
-  window.addEventListener('mouseup',()=>dragging=false);
-  box.addEventListener('touchstart',e=>{ dragging=true; setPos(e.touches[0].clientX); },{passive:true});
-  window.addEventListener('touchmove',e=>{ if(dragging) setPos(e.touches[0].clientX); },{passive:true});
-  window.addEventListener('touchend',()=>dragging=false);
-})();
-
-/* ============ PROJECT BEFORE/AFTER SLIDER ============ */
-(function(){
-  const ba=document.getElementById('projectBA');
-  const handle=document.getElementById('projectBAhandle');
-  const beforeWrap=document.getElementById('projectBAbeforeWrap');
-  if(!ba||!handle||!beforeWrap) return;
-  let dragging=false;
-  function setPos(x){
-    const rect=ba.getBoundingClientRect();
-    let pct=((x-rect.left)/rect.width)*100;
-    pct=Math.max(5,Math.min(95,pct));
-    handle.style.left=pct+'%';
-    beforeWrap.style.width=pct+'%';
-  }
-  ba.addEventListener('mousedown',e=>{ dragging=true; setPos(e.clientX); });
-  window.addEventListener('mousemove',e=>{ if(dragging) setPos(e.clientX); });
-  window.addEventListener('mouseup',()=>dragging=false);
-  ba.addEventListener('touchstart',e=>{ dragging=true; setPos(e.touches[0].clientX); },{passive:true});
-  window.addEventListener('touchmove',e=>{ if(dragging) setPos(e.touches[0].clientX); },{passive:true});
-  window.addEventListener('touchend',()=>dragging=false);
-})();
-
-/* ============ HERO SCENE ROTATION ============ */
-(function(){
-  const scenes=document.querySelectorAll('#heroHeroScenes .kb-scene');
-  const label=document.getElementById('heroSceneLabel');
-  const labels=['Grachtenpand Keizersgracht — Living','Villa Mastbosrand — Kitchen','Penthouse Utrecht — Master Suite'];
-  let idx=0;
-  setInterval(()=>{
-    scenes.forEach(s=>s.classList.remove('active'));
-    idx=(idx+1)%scenes.length;
-    scenes[idx].classList.add('active');
-    if(label) label.textContent=labels[idx]||'';
-  },5000);
-})();
-
-/* ============ INIT ============ */
-document.getElementById('year').textContent=new Date().getFullYear();
-renderPortfolioGrid();
-navigateTo('home');
-</script>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
